@@ -14,6 +14,9 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -46,26 +49,199 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">SPLASHER</a>
+                   <%-- <a class="navbar-brand" runat="server" href="~/">SPLASHER</a>--%>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                        <%-- <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>--%>
+
                     </ul>
+                   <div class="text-center">
+                       <button type="button" class="btn btn-info btn-lg" id="btnShowCME" data-toggle="modal" data-target="#CME">CME</button>
+                     <button type="button" class="btn btn-info btn-lg" id="btnShowCMGM" data-toggle="modal" data-target="#CMGM">CMGM</button>
+                     <button type="button" class="btn btn-info btn-lg" id="btnShowCMW" data-toggle="modal" data-target="#CMW">CMW</button>
+                     <button type="button" class="btn btn-info btn-lg" id="btnShowCMCD" data-toggle="modal" data-target="#CMCD">CMCD</button>
+                     <button type="button" class="btn btn-info btn-lg" id="btnShowCMCG" data-toggle="modal" data-target="#CMCG">CMCG</button>
+                     <button type="button" class="btn btn-info btn-lg" id="btnShowCMPK" data-toggle="modal" data-target="#CMPK">CMPK</button>
+                   </div>
+                     
                 </div>
             </div>
         </div>
+
+        <div>
+           
+            <!-- Modal -->
+            <%--   <asp:Button ID="btnshow" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" runat="server" Text="Open Modal" OnClick="btnshow_Click" />--%>
+            <!--Modal -->
+            <%--CME Modal Begins--%>
+            <div id="CME" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%-- CME Modal Ends--%>
+
+             <%--CMGM Modal Begins--%>
+            <div id="CMGM" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%-- CMGM Modal Ends--%>
+
+             <%--CMW Modal Begins--%>
+            <div id="CMW" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%-- CMW Modal Ends--%>
+
+             <%--CMCD Modal Begins--%>
+            <div id="CMCD" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%-- CMCD Modal Ends--%>
+
+             <%--CMCG Modal Begins--%>
+            <div id="CMCG" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%-- CMCG Modal Ends--%>
+
+             <%--CMPK Modal Begins--%>
+            <div id="CMPK" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%-- CMPK Modal Ends--%>
+        </div>
+
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - CMSL</p>
-            </footer>
         </div>
+        <hr />
+        <footer>
+            <div class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <%--<div class="text-center">
+                        <label style="text-align:center"><a class="navbar-brand " runat="server" href="~/">SPLASHER</a></label>
+                        
+                    </div>--%>
+                    
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    
+                    </ul>
+                    
+                    
+                 
+                     
+                </div>
 
+                 <div class="text-center" style="padding-top:10px; font-size:x-large">
+                     <label><a runat="server" href="~/">SPLASHER</a></label>
+                        
+                    </div>
+            </div>
+
+               
+        </div>
+        </footer>
     </form>
 </body>
 </html>

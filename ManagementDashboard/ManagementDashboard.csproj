@@ -178,6 +178,7 @@
     <Compile Include="CentralProvince.aspx.designer.cs">
       <DependentUpon>CentralProvince.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Common.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
