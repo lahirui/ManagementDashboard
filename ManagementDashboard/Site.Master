@@ -59,12 +59,20 @@
 
                     </ul>
                    <div class="text-center">
-                       <button type="button" class="btn btn-info btn-lg" id="btnShowCME" data-toggle="modal" data-target="#CME">CME</button>
+                       <%--<button type="button" class="btn btn-info btn-lg" id="btnShowCME" data-toggle="modal" data-target="#CME">CME</button>
+                       
                      <button type="button" class="btn btn-info btn-lg" id="btnShowCMGM" data-toggle="modal" data-target="#CMGM">CMGM</button>
                      <button type="button" class="btn btn-info btn-lg" id="btnShowCMW" data-toggle="modal" data-target="#CMW">CMW</button>
                      <button type="button" class="btn btn-info btn-lg" id="btnShowCMCD" data-toggle="modal" data-target="#CMCD">CMCD</button>
                      <button type="button" class="btn btn-info btn-lg" id="btnShowCMCG" data-toggle="modal" data-target="#CMCG">CMCG</button>
-                     <button type="button" class="btn btn-info btn-lg" id="btnShowCMPK" data-toggle="modal" data-target="#CMPK">CMPK</button>
+                     <button type="button" class="btn btn-info btn-lg" id="btnShowCMPK" data-toggle="modal" data-target="#CMPK">CMPK</button>--%>
+
+                       <asp:Button CssClass="btn btn-info btn-lg" ID="CMEPage" runat="server" Text="CME"  OnClick="CMEPage_Click"/>
+                       <asp:Button CssClass="btn btn-info btn-lg" ID="CMGMPage" runat="server" Text="CMGM"  OnClick="CMGMPage_Click"/>
+                       <asp:Button CssClass="btn btn-info btn-lg" ID="CMWPage" runat="server" Text="CMW"  OnClick="CMWPage_Click"/>
+                       <asp:Button CssClass="btn btn-info btn-lg" ID="CMCDPage" runat="server" Text="CMCD"  OnClick="CMCDPage_Click"/>
+                       <asp:Button CssClass="btn btn-info btn-lg" ID="CMCGPage" runat="server" Text="CMCG"  OnClick="CMCGPage_Click"/>
+                       <asp:Button CssClass="btn btn-info btn-lg" ID="CMPKPage" runat="server" Text="CMPK"  OnClick="CMPKPage_Click"/>
                    </div>
                      
                 </div>

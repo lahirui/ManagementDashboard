@@ -107,6 +107,12 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="CentralProvince.aspx" />
+    <Content Include="CMCD.aspx" />
+    <Content Include="CMCG.aspx" />
+    <Content Include="CME.aspx" />
+    <Content Include="CMGM.aspx" />
+    <Content Include="CMPK.aspx" />
+    <Content Include="CMW.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -177,6 +183,48 @@
     </Compile>
     <Compile Include="CentralProvince.aspx.designer.cs">
       <DependentUpon>CentralProvince.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMCD.aspx.cs">
+      <DependentUpon>CMCD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMCD.aspx.designer.cs">
+      <DependentUpon>CMCD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMCG.aspx.cs">
+      <DependentUpon>CMCG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMCG.aspx.designer.cs">
+      <DependentUpon>CMCG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CME.aspx.cs">
+      <DependentUpon>CME.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CME.aspx.designer.cs">
+      <DependentUpon>CME.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMGM.aspx.cs">
+      <DependentUpon>CMGM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMGM.aspx.designer.cs">
+      <DependentUpon>CMGM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMPK.aspx.cs">
+      <DependentUpon>CMPK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMPK.aspx.designer.cs">
+      <DependentUpon>CMPK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMW.aspx.cs">
+      <DependentUpon>CMW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMW.aspx.designer.cs">
+      <DependentUpon>CMW.aspx</DependentUpon>
     </Compile>
     <Compile Include="Common.cs" />
     <Compile Include="Contact.aspx.cs">

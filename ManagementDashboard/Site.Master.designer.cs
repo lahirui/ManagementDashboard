@@ -13,6 +13,60 @@ namespace ManagementDashboard {
     public partial class SiteMaster {
         
         /// <summary>
+        /// CMEPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CMEPage;
+        
+        /// <summary>
+        /// CMGMPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CMGMPage;
+        
+        /// <summary>
+        /// CMWPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CMWPage;
+        
+        /// <summary>
+        /// CMCDPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CMCDPage;
+        
+        /// <summary>
+        /// CMCGPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CMCGPage;
+        
+        /// <summary>
+        /// CMPKPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CMPKPage;
+        
+        /// <summary>
         /// TextBox1 control.
         /// </summary>
         /// <remarks>
