@@ -15,8 +15,13 @@ namespace ManagementDashboard
         public static string strServerName;
         public SqlConnection conSQL = new SqlConnection();
         public SqlTransaction sqlTxn;
-        public string constr = ConfigurationManager.ConnectionStrings["ConString"].ConnectionString;
-        public string ConStrRefinedForReports;
+        public string CMEconstr = ConfigurationManager.ConnectionStrings["CMEConString"].ConnectionString;
+        public string CMWconstr = ConfigurationManager.ConnectionStrings["CMWConString"].ConnectionString;
+        public string CMMconstr = ConfigurationManager.ConnectionStrings["CMMConString"].ConnectionString;
+        public string CMCGconstr = ConfigurationManager.ConnectionStrings["CMCGConString"].ConnectionString;
+        public string CMCDconstr = ConfigurationManager.ConnectionStrings["CMCDConString"].ConnectionString;
+        public string CMCKconstr = ConfigurationManager.ConnectionStrings["CMCKConString"].ConnectionString;
+        public string PDCS_Reportsconstr = ConfigurationManager.ConnectionStrings["PDCS_ReportsConString"].ConnectionString;
         public static int MID = 0;
         //public static int UserId;
 
@@ -31,16 +36,9 @@ namespace ManagementDashboard
 
         public bool ConnectDB() //connect to Database
         {
-            
-            //if (constr.ToLower().StartsWith("metadata="))
-            //{   
-            //    EntityConnectionStringBuilder RefineConStr = new EntityConnectionStringBuilder(constr);
-            //    constr = RefineConStr.ProviderConnectionString;
-            //}
-           
             if (string.IsNullOrEmpty(conSQL.ConnectionString))
             {
-                conSQL.ConnectionString = constr;
+                conSQL.ConnectionString = PDCS_Reportsconstr;
             }
             if (conSQL.State == ConnectionState.Closed)
             {
