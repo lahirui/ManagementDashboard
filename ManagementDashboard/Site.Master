@@ -68,6 +68,12 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+
+        <div ><%--class="container body-content"--%>
+            <asp:ContentPlaceHolder ID="SubContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
         <hr />
         <footer>
             <div class="navbar navbar-inverse navbar-fixed-bottom">

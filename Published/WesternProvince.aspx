@@ -1,35 +1,26 @@
 ﻿<%@ Page Title="Western Province" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WesternProvince.aspx.cs" Inherits="ManagementDashboard.WesternProvince" %>
 
-<%--<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>--%>
 
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <meta http-equiv="refresh" content="5;url=CentralProvince.aspx" />
-  <h3>Western Province</h3>
-    <p><asp:GridView ID="gvCMSL" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2">
-            <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
-            <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
-            <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
-            <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
-            <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
-            <SortedAscendingCellStyle BackColor="#FFF1D4" />
-            <SortedAscendingHeaderStyle BackColor="#B95C30" />
-            <SortedDescendingCellStyle BackColor="#F1E5CE" />
-            <SortedDescendingHeaderStyle BackColor="#93451F" />
+    <meta http-equiv="refresh" content="10;url=CentralProvince.aspx" />
+    <h3 class="text-center" style="font-weight:bold; color:darkkhaki">Western Province Current Status</h3>
+  <h3>
+        <asp:Button ID="btnExportExcel" runat="server" Text="Export to Excel" OnClick="btnExportExcel_Click" CssClass="btn btn-success" style="font-weight:bold" />
+    </h3>
+        <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" GridLines="Vertical" ForeColor="Black" OnRowDataBound="GridView1_RowDataBound" Width="100%">
+
+            <AlternatingRowStyle BackColor="White" />
+            <FooterStyle BackColor="#CCCC99" />
+            <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White"/>
+            <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+            <RowStyle BackColor="#F7F7DE" HorizontalAlign="Right" VerticalAlign="Middle" />
+            <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
+            <SortedAscendingCellStyle BackColor="#FBFBF2" />
+            <SortedAscendingHeaderStyle BackColor="#848384" />
+            <SortedDescendingCellStyle BackColor="#EAEAD3" />
+            <SortedDescendingHeaderStyle BackColor="#575357" />
         </asp:GridView>
-
-    </p>
-
+    
 </asp:Content>
