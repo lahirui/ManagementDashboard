@@ -22,6 +22,7 @@ namespace ManagementDashboard
         {
             if (!this.IsPostBack)
             {
+                GridView1.Font.Size = 15;
                 BindGrid();
             }
         }

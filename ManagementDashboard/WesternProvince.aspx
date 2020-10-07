@@ -4,7 +4,7 @@
 
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <meta http-equiv="refresh" content="5;url=CentralProvince.aspx" />
+    <meta http-equiv="refresh" content="10;url=CentralProvince.aspx" />
     <h3 class="text-center" style="font-weight:bold; color:darkkhaki">Western Province Current Status</h3>
   <h3>
         <asp:Button ID="btnExportExcel" runat="server" Text="Export to Excel" OnClick="btnExportExcel_Click" CssClass="btn btn-success" style="font-weight:bold" />

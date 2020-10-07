@@ -22,6 +22,7 @@ namespace ManagementDashboard
         {
             if(!this.IsPostBack)
             {
+                GridView1.Font.Size = 15;
                 BindGrid();
             }
             
@@ -94,7 +95,10 @@ namespace ManagementDashboard
             lst.Clear();
         }
 
-        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+
+       
+
+        protected void GridView1_RowDataBound1(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.DataRow)
             {

@@ -1,11 +1,13 @@
-﻿<%@ Page Title="SPLASHER" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ManagementDashboard._Default" %>
+﻿<%@ Page Title="CMSL" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ManagementDashboard._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h3 class="text-center" style="font-weight:bold; color:darkkhaki">CMSL Current Status</h3>
-
+    <meta http-equiv="refresh" content="10;url=WesternProvince.aspx" />
+<h3 class="text-center" style="font-weight:bold; color:darkkhaki">CMSL Current Status</h3>
+      <h3>
         <asp:Button ID="btnExportExcel" runat="server" Text="Export to Excel" OnClick="btnExportExcel_Click" CssClass="btn btn-success" style="font-weight:bold" />
+    </h3>
 
-        <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" GridLines="Vertical" ForeColor="Black" OnRowDataBound="GridView1_RowDataBound" Width="100%">
+    <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" GridLines="Vertical" ForeColor="Black" OnRowDataBound="GridView1_RowDataBound1" Width="100%">
 
             <AlternatingRowStyle BackColor="White" />
             <FooterStyle BackColor="#CCCC99" />
@@ -18,5 +20,4 @@
             <SortedDescendingCellStyle BackColor="#EAEAD3" />
             <SortedDescendingHeaderStyle BackColor="#575357" />
         </asp:GridView>
-    
 </asp:Content>
