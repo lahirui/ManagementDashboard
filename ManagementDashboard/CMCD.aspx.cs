@@ -34,8 +34,8 @@ namespace ManagementDashboard
         {
             SqlConnection con = new SqlConnection();
             ds = new DataSet();
-            con.ConnectionString = common.CMCDconstr;
-            SqlCommand cmd = new SqlCommand(gridViewQueries.FactoryData, con);
+            con.ConnectionString = common.PDCS_Reportsconstr;
+            SqlCommand cmd = new SqlCommand(gridViewQueries.CMCDQuery, con);
 
             da = new SqlDataAdapter(cmd);
             da.Fill(ds);

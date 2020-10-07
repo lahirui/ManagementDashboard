@@ -15,12 +15,12 @@ namespace ManagementDashboard
         public static string strServerName;
         public SqlConnection conSQL = new SqlConnection();
         public SqlTransaction sqlTxn;
-        public string CMEconstr = ConfigurationManager.ConnectionStrings["CMEConString"].ConnectionString;
-        public string CMWconstr = ConfigurationManager.ConnectionStrings["CMWConString"].ConnectionString;
-        public string CMMconstr = ConfigurationManager.ConnectionStrings["CMMConString"].ConnectionString;
-        public string CMCGconstr = ConfigurationManager.ConnectionStrings["CMCGConString"].ConnectionString;
-        public string CMCDconstr = ConfigurationManager.ConnectionStrings["CMCDConString"].ConnectionString;
-        public string CMCKconstr = ConfigurationManager.ConnectionStrings["CMCKConString"].ConnectionString;
+        //public string CMEconstr = ConfigurationManager.ConnectionStrings["CMEConString"].ConnectionString;
+        //public string CMWconstr = ConfigurationManager.ConnectionStrings["CMWConString"].ConnectionString;
+        //public string CMMconstr = ConfigurationManager.ConnectionStrings["CMMConString"].ConnectionString;
+        //public string CMCGconstr = ConfigurationManager.ConnectionStrings["CMCGConString"].ConnectionString;
+        //public string CMCDconstr = ConfigurationManager.ConnectionStrings["CMCDConString"].ConnectionString;
+        //public string CMCKconstr = ConfigurationManager.ConnectionStrings["CMCKConString"].ConnectionString;
         public string PDCS_Reportsconstr = ConfigurationManager.ConnectionStrings["PDCS_ReportsConString"].ConnectionString;
         public static int MID = 0;
         //public static int UserId;
