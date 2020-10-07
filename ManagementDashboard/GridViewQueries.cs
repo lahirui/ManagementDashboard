@@ -167,7 +167,7 @@ namespace ManagementDashboard
                         "GROUP BY SortOrder, Code " +
                         "ORDER BY SortOrder";
 
-        public string CountryQuery = "SELECT (CASE WHEN Code='BUN' THEN 'BUNDLING'  WHEN Code='SEW' THEN 'SEWING' WHEN Code='FIN' THEN 'FINISHING' END) AS Area, " +
+        public string CMSLQuery = "SELECT (CASE WHEN Code='BUN' THEN 'BUNDLING'  WHEN Code='SEW' THEN 'SEWING' WHEN Code='FIN' THEN 'FINISHING' END) AS Area, " +
                                            "IIF(SUM(ISNULL(Clocked_Minutes,0)) > 0, (CONVERT(DECIMAL(10, 2),SUM(ISNULL(C_Out_Achieved_Minutes,0))/SUM(ISNULL(Clocked_Minutes,0))))*100,0) as 'C-OUT Efficiency', " +
                                            "SUM(ISNULL(C_OUT,0)) as 'C-OUT', " +
                                            "(CONVERT(DECIMAL(10, 2),(SUM(ISNULL(C_OUT_Achieved_Minutes,0))/60))) as 'C-OUT SAH', " +
