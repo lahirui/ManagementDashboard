@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="SPLASHER" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ManagementDashboard._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="SubContent" runat="server">
-    <%--    <link href="Content/bootstrap.css" rel="stylesheet" />--%>
-    <meta http-equiv="refresh" content="10;url=WesternProvince.aspx" />
+
+    <meta http-equiv="refresh" content="30;url=WesternProvince.aspx" />
 
   <div class="row text-center">
          <div class="col-md-3 text-center" style="padding-top:10px">
@@ -17,7 +17,7 @@
     </div>
 
     <%--Bundling--%>
-    <div class="row" style="padding-left: 150px; font-weight: bolder">
+    <div class="row" style="padding-left: 50px; font-weight: bolder">
         <div class="col-md-1 text-center">
             <asp:Label ID="Label1" runat="server" Text=" "></asp:Label>
         </div>
@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    <div class="row" style="padding-left: 150px; font-weight: bolder">
+    <div class="row" style="padding-left: 50px; font-weight: bolder">
         <div class="col-md-1 text-center" style="padding-top: 10px; font-weight: bolder; color: blue">
             <asp:Label ID="lblArea" runat="server" Text="BUNDLING"></asp:Label>
         </div>
@@ -67,7 +67,7 @@
     </div>
     <br />
     <%--Sewing--%>
-    <div class="row" style="padding-left: 150px; font-weight: bolder">
+    <div class="row" style="padding-left: 50px; font-weight: bolder">
         <div class="col-md-1 text-center">
             <asp:Label ID="Label2" runat="server" Text=" "></asp:Label>
         </div>
@@ -96,9 +96,19 @@
         <div class="col-md-1 text-center">
             <asp:Label ID="Label15" runat="server" Text="AQL Pass %"></asp:Label>
         </div>
+        <div class="col-md-1 text-center">
+            <asp:Label ID="Label43" runat="server" Text="L-Out Eff.%"></asp:Label>
+        </div>
+
+        <div class="col-md-1 text-center">
+            <asp:Label ID="Label44" runat="server" Text="L-Output"></asp:Label>
+        </div>
+        <div class="col-md-1 text-center">
+            <asp:Label ID="Label45" runat="server" Text="L-Out SAH"></asp:Label>
+        </div>
     </div>
 
-    <div class="row" style="padding-left: 150px; font-weight: bolder">
+    <div class="row" style="padding-left: 50px; font-weight: bolder">
         <div class="col-md-1 text-center" style="padding-top: 10px; font-weight: bolder; color: green">
             <asp:Label ID="Label17" runat="server" Text="SEWING"></asp:Label>
         </div>
@@ -126,9 +136,18 @@
         <div class="col-md-1 text-center">
             <asp:Label CssClass="btn btn-success btn-lg btn-block" ID="BtnSewAQL" runat="server" Text="0"></asp:Label>
         </div>
+         <div class="col-md-1 text-center">
+            <asp:Label CssClass="btn btn-success btn-lg btn-block" ID="btnSewLoutEff" runat="server" Text="0"></asp:Label>
+        </div>
+        <div class="col-md-1 text-center">
+            <asp:Label CssClass="btn btn-success btn-lg btn-block" ID="btnSewLOUT" runat="server" Text="0"></asp:Label>
+        </div>
+        <div class="col-md-1 text-center">
+            <asp:Label CssClass="btn btn-success btn-lg btn-block" ID="btnSewLoutSAH" runat="server" Text="0"></asp:Label>
+        </div>
     </div>
     <br />
-    <div class="row" style="padding-left: 150px; font-weight: bolder">
+   <%-- <div class="row" style="padding-left: 50px; font-weight: bolder">
         <div class="col-md-1 text-center">
             <asp:Label ID="Label42" runat="server" Text=" "></asp:Label>
         </div>
@@ -142,9 +161,9 @@
         <div class="col-md-1 text-center">
             <asp:Label ID="Label45" runat="server" Text="L-Out SAH"></asp:Label>
         </div>
-    </div>
+    </div>--%>
 
-    <div class="row" style="padding-left: 150px; font-weight: bolder">
+   <%-- <div class="row" style="padding-left: 50px; font-weight: bolder">
         <div class="col-md-1 text-center" style="padding-top: 10px;">
             <asp:Label ID="Label46" runat="server" Text=""></asp:Label>
         </div>
@@ -158,10 +177,10 @@
         <div class="col-md-1 text-center">
             <asp:Label CssClass="btn btn-success btn-lg btn-block" ID="btnSewLoutSAH" runat="server" Text="0"></asp:Label>
         </div>
-    </div>
+    </div>--%>
     <br />
     <%--Finishing--%>
-    <div class="row" style="padding-left: 150px; font-weight: bolder">
+    <div class="row" style="padding-left: 50px; font-weight: bolder; margin-top:-15px">
         <div class="col-md-1 text-center">
             <asp:Label ID="Label20" runat="server" Text=" "></asp:Label>
         </div>
@@ -186,7 +205,7 @@
         </div>
     </div>
 
-    <div class="row" style="padding-left: 150px; font-weight: bolder">
+    <div class="row" style="padding-left: 50px; font-weight: bolder">
         <div class="col-md-1 text-center" style="padding-top: 10px; font-weight: bolder; color: darkorange">
             <asp:Label ID="Label32" runat="server" Text="FINISHING"></asp:Label>
         </div>
@@ -211,7 +230,7 @@
     </div>
     <br />
     <%--Totals--%>
-    <div class="row" style="padding-left: 150px; font-weight: bolder">
+    <div class="row" style="padding-left: 50px; font-weight: bolder">
         <div class="col-md-1 text-center">
             <asp:Label ID="Label30" runat="server" Text=" "></asp:Label>
         </div>
@@ -242,7 +261,7 @@
         </div>
     </div>
 
-    <div class="row" style="padding-left: 150px; font-weight: bolder">
+    <div class="row" style="padding-left: 50px; font-weight: bolder">
         <div class="col-md-1 text-center" style="padding-top: 10px; font-weight: bolder; color: darkred">
             <asp:Label ID="Label41" runat="server" Text="TOTAL"></asp:Label>
         </div>
@@ -273,7 +292,7 @@
     </div>
     <%--WIP Details--%>
     <hr />
-    <div class="row" style="padding-left: 150px; font-weight: bolder">
+    <div class="row" style="padding-left: 50px; font-weight: bolder">
         <div class="col-md-1 text-center">
             <asp:Label ID="Label18" runat="server" Text=" "></asp:Label>
         </div>
@@ -304,7 +323,7 @@
         </div>
     </div>
 
-    <div class="row" style="padding-left: 150px; font-weight: bolder">
+    <div class="row" style="padding-left: 50px; font-weight: bolder">
         <div class="col-md-1 text-center" style="padding-top: 10px; font-weight: bolder; color: red">
             <asp:Label ID="Label19" runat="server" Text="WIP DETAILS"></asp:Label>
         </div>

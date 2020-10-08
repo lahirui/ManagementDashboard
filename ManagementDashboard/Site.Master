@@ -91,7 +91,7 @@
                     </div>
 
                     <div class="text-center" style="padding-top: 10px; font-size: x-large">
-                        <label><a runat="server" href="~/">HOME</a></label>
+                        <label><a runat="server" href="~/" class="glyphicon glyphicon-home"></a></label>
                     </div>
                 </div>
             </div>

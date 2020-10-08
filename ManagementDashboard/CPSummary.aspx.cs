@@ -11,7 +11,10 @@ namespace ManagementDashboard
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!this.IsPostBack)
+            {
+                lblCMSLTime.Text = DateTime.Now.ToString("dd-MMM-yyyy hh:mm");
+            }
         }
     }
 }

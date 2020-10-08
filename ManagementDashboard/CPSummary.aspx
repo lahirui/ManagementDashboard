@@ -1,11 +1,17 @@
 ﻿<%@ Page Title="CP Summary" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="CPSummary.aspx.cs" Inherits="ManagementDashboard.CPSummary" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="SubContent" runat="server">
-    <meta http-equiv="refresh" content="10;url=Default.aspx" />
-    <h3 class="text-center" style="font-weight:bold; color:darkkhaki">Central Province Factory Wise Summary</h3>
-    <div class="row" style="padding-left:50px">
-        <div class="col-md-6" style="font-size:x-large">
-             <asp:Label ID="lblTime" runat="server" ></asp:Label>
+    <meta http-equiv="refresh" content="30;url=Default.aspx" />
+
+<div class="row text-center">
+         <div class="col-md-3 text-center" style="padding-top:10px">
+            <asp:Label ID="lblCMSLTime" runat="server" style="font-size:x-large;color:darkolivegreen; font-weight:bolder; "></asp:Label>
+            
+        </div>
+
+        <div class="col-md-6 text-center">
+            <asp:Label ID="lblTitle" runat="server" style="font-size:xx-large; color:darkorange; font-weight:bolder">Central Province Factory Wise Summary</asp:Label>
+           
         </div>
     </div>
 
@@ -95,7 +101,7 @@
     </div>
     <br />
     <%--Sewing--%>
-    <div class="row" style="padding-left:170px; font-weight:bolder">
+    <div class="row" style="padding-left:170px; font-weight:bolder;margin-top:-15px">
          <div class="col-md-1 text-center">
              <asp:Label ID="Label2" runat="server" Text=" "></asp:Label>
          </div>
@@ -197,7 +203,7 @@
     <br />
  
     <%--Finishing--%>
-    <div class="row" style="padding-left:170px;font-weight:bolder">
+    <div class="row" style="padding-left:170px;font-weight:bolder; margin-top:-15px">
          <div class="col-md-1 text-center">
              <asp:Label ID="Label20" runat="server" Text=" "></asp:Label>
          </div>
@@ -275,7 +281,7 @@
     </div>
     <br />
     <%--Totals--%>
-    <div class="row" style="padding-left:170px;font-weight:bolder">
+    <%--<div class="row" style="padding-left:170px;font-weight:bolder">
          <div class="col-md-1 text-center">
              <asp:Label ID="Label30" runat="server" Text=" "></asp:Label>
          </div>
@@ -348,11 +354,11 @@
         <div class="col-md-1 text-center" style="width:120px">
              <asp:Label CssClass="btn btn-danger btn-sm btn-block" ID="btnTotWIP" runat="server" Text="0"></asp:Label>
         </div>
-    </div>
+    </div>--%>
 
     <%--CMCG--%>
     <%--Bundling--%>
-    <div class="row" style="padding-left:10px; font-weight:bolder">
+    <div class="row" style="padding-left:10px; font-weight:bolder; margin-top:15px">
          <div class="col-md-1 text-center" style="width:170px">
              <asp:Label ID="Label42" runat="server" Text=" "></asp:Label>
          </div>
@@ -436,7 +442,7 @@
     </div>
     <br />
     <%--Sewing--%>
-    <div class="row" style="padding-left:170px; font-weight:bolder">
+    <div class="row" style="padding-left:170px; font-weight:bolder; margin-top:-15px">
          <div class="col-md-1 text-center">
              <asp:Label ID="Label70" runat="server" Text=" "></asp:Label>
          </div>
@@ -538,7 +544,7 @@
     <br />
   
     <%--Finishing--%>
-    <div class="row" style="padding-left:170px;font-weight:bolder">
+    <div class="row" style="padding-left:170px;font-weight:bolder; margin-top:-15px">
          <div class="col-md-1 text-center">
              <asp:Label ID="Label96" runat="server" Text=" "></asp:Label>
          </div>
@@ -616,7 +622,7 @@
     </div>
     <br />
     <%--Totals--%>
-    <div class="row" style="padding-left:170px;font-weight:bolder">
+   <%-- <div class="row" style="padding-left:170px;font-weight:bolder">
          <div class="col-md-1 text-center">
              <asp:Label ID="Label116" runat="server" Text=" "></asp:Label>
          </div>
@@ -689,11 +695,11 @@
         <div class="col-md-1 text-center" style="width:120px">
              <asp:Label CssClass="btn btn-danger btn-sm btn-block" ID="Label135" runat="server" Text="0"></asp:Label>
         </div>
-    </div>
+    </div>--%>
 
     <%--CMPK--%>
     <%--Bundling--%>
-    <div class="row" style="padding-left:10px; font-weight:bolder">
+    <div class="row" style="padding-left:10px; font-weight:bolder; margin-top:15px">
          <div class="col-md-1 text-center" style="width:170px">
              <asp:Label ID="Label136" runat="server" Text=" "></asp:Label>
          </div>
@@ -777,7 +783,7 @@
     </div>
     <br />
     <%--Sewing--%>
-    <div class="row" style="padding-left:170px; font-weight:bolder">
+    <div class="row" style="padding-left:170px; font-weight:bolder; margin-top:-15px">
          <div class="col-md-1 text-center">
              <asp:Label ID="Label158" runat="server" Text=" "></asp:Label>
          </div>
@@ -878,7 +884,7 @@
     </div>
     <br />
     <%--Finishing--%>
-    <div class="row" style="padding-left:170px;font-weight:bolder">
+    <div class="row" style="padding-left:170px;font-weight:bolder; margin-top:-15px">
          <div class="col-md-1 text-center">
              <asp:Label ID="Label184" runat="server" Text=" "></asp:Label>
          </div>
@@ -956,7 +962,7 @@
     </div>
     <br />
     <%--Totals--%>
-    <div class="row" style="padding-left:170px;font-weight:bolder">
+   <%-- <div class="row" style="padding-left:170px;font-weight:bolder">
          <div class="col-md-1 text-center">
              <asp:Label ID="Label204" runat="server" Text=" "></asp:Label>
          </div>
@@ -1029,5 +1035,5 @@
         <div class="col-md-1 text-center" style="width:120px">
              <asp:Label CssClass="btn btn-danger btn-sm btn-block" ID="Label223" runat="server" Text="0"></asp:Label>
         </div>
-    </div>
+    </div>--%>
 </asp:Content>
