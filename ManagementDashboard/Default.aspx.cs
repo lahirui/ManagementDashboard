@@ -22,7 +22,7 @@ namespace ManagementDashboard
         {
             if(!this.IsPostBack)
             {
-                lblTime.Text = DateTime.Now.ToString("dd-MMM-yyyy hh:mm");
+                lblCMSLTime.Text = DateTime.Now.ToString("dd-MMM-yyyy hh:mm");
                 DataSet dsCMSL = new DataSet();
                 dsCMSL = common.ReturnDataSet(gridViewQueries.CMSLQuery);
                 if (dsCMSL.Tables[0].Rows.Count > 0)

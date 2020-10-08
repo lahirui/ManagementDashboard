@@ -2,28 +2,19 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="SubContent" runat="server">
     <meta http-equiv="refresh" content="10;url=Default.aspx" />
-    <h3 class="text-center" style="font-weight:bold; color:darkkhaki">Central Province Current Status</h3>
-  <div class="row" style="padding-left:50px">
-        <div class="col-md-6" style="font-size:x-large">
-             <asp:Label ID="lblTime" runat="server" ></asp:Label>
+
+    <div class="row text-center">
+         <div class="col-md-3 text-center" style="padding-top:10px">
+            <asp:Label ID="lblTime" runat="server" style="font-size:x-large;color:darkolivegreen; font-weight:bolder; "></asp:Label>
+            
+        </div>
+
+        <div class="col-md-6 text-center">
+            <asp:Label ID="lblTitle" runat="server" style="font-size:xx-large; color:darkorange; font-weight:bolder">Central Province Current Status</asp:Label>
+           
         </div>
     </div>
-    <h3>
-        <%--<asp:Button ID="btnExportExcel" runat="server" Text="Export to Excel" OnClick="btnExportExcel_Click" CssClass="btn btn-success" style="font-weight:bold" />--%>
-    </h3>
-        <%--<asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" GridLines="Vertical" ForeColor="Black" OnRowDataBound="GridView1_RowDataBound" Width="100%">
 
-            <AlternatingRowStyle BackColor="White" />
-            <FooterStyle BackColor="#CCCC99" />
-            <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White"/>
-            <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
-            <RowStyle BackColor="#F7F7DE" HorizontalAlign="Right" VerticalAlign="Middle" />
-            <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
-            <SortedAscendingCellStyle BackColor="#FBFBF2" />
-            <SortedAscendingHeaderStyle BackColor="#848384" />
-            <SortedDescendingCellStyle BackColor="#EAEAD3" />
-            <SortedDescendingHeaderStyle BackColor="#575357" />
-        </asp:GridView>--%>
 
      <%--Bundling--%>
     <div class="row" style="padding-left:150px; font-weight:bolder">
@@ -55,18 +46,7 @@
             <asp:Label ID="Label4" runat="server" Text="Downtime Hrs"></asp:Label>
             
         </div>
-        <div class="col-md-1 text-center">
-            <asp:Label ID="Label5" runat="server" Text="WIP at Cutting"></asp:Label>
-           
-        </div>
-        <div class="col-md-1 text-center">
-            <asp:Label ID="Label6" runat="server" Text="WIP at Bundling"></asp:Label>
-           
-        </div>
-        <div class="col-md-1 text-center">
-            <asp:Label ID="Label7" runat="server" Text="WIP After Bundling"></asp:Label>
-           
-        </div>
+        
     </div>
     
     <div class="row" style="padding-left:150px;font-weight:bolder">
@@ -91,15 +71,7 @@
         <div class="col-md-1 text-center">
             <asp:Label CssClass="btn btn-primary btn-lg btn-block" ID="btnBunDowntime" runat="server" Text="0"></asp:Label>
         </div>
-        <div class="col-md-1 text-center">
-             <asp:Label CssClass="btn btn-primary btn-lg btn-block" ID="btnBunINQ" runat="server" Text="0"></asp:Label>
-        </div>
-        <div class="col-md-1 text-center">
-             <asp:Label CssClass="btn btn-primary btn-lg btn-block" ID="btnBunWIP" runat="server" Text="0"></asp:Label>
-        </div>
-        <div class="col-md-1 text-center">
-             <asp:Label CssClass="btn btn-primary btn-lg btn-block" ID="btnBunOutQ" runat="server" Text="0"></asp:Label>
-        </div>
+       
 
     </div>
     <br />
@@ -141,9 +113,7 @@
             <asp:Label ID="Label15" runat="server" Text="AQL Pass %"></asp:Label>
            
         </div>
-        <div class="col-md-1 text-center">
-            <asp:Label ID="Label16" runat="server" Text="WIP at Sewing"></asp:Label>
-        </div>
+        
         
     </div>
 
@@ -175,9 +145,7 @@
         <div class="col-md-1 text-center">
              <asp:Label CssClass="btn btn-success btn-lg btn-block" ID="BtnSewAQL" runat="server" Text="0"></asp:Label>
         </div>
-        <div class="col-md-1 text-center">
-             <asp:Label CssClass="btn btn-success btn-lg btn-block" ID="btnSewWIP" runat="server" Text="0"></asp:Label>
-        </div>
+       
         
 
     </div>
@@ -187,7 +155,7 @@
              <asp:Label ID="Label42" runat="server" Text=" "></asp:Label>
          </div>
         <div class="col-md-1 text-center">
-            <asp:Label ID="Label43" runat="server" Text="L-Out Efficiency %"></asp:Label>
+            <asp:Label ID="Label43" runat="server" Text="L-Out Eff.%"></asp:Label>
             
         </div>
 
@@ -248,26 +216,7 @@
             <asp:Label ID="Label26" runat="server" Text="Downtime Hrs"></asp:Label>
             
         </div>
-        <div class="col-md-1 text-center">
-            <asp:Label ID="Label27" runat="server" Text="WIP After AQL"></asp:Label>
-           
-        </div>
-        <div class="col-md-1 text-center">
-            <asp:Label ID="Label28" runat="server" Text="WIP at Finishing"></asp:Label>
-           
-        </div>
-        <div class="col-md-1 text-center">
-            <asp:Label ID="Label29" runat="server" Text="WIP After Finishing"></asp:Label>
-        </div>
-          <%-- <div class="col-md-1 text-center">
-            <asp:Label ID="Label30" runat="server" Text="L-Out"></asp:Label>
-        </div>
-         <div class="col-md-1 text-center">
-            <asp:Label ID="Label31" runat="server" Text="L-Out SAH"></asp:Label>
-        </div>
-       <div class="col-md-1 text-center">
-            <asp:Label ID="Label20" runat="server" Text="L-Out Efficiency"></asp:Label>
-        </div>--%>
+     
     </div>
 
     <div class="row" style="padding-left:150px;font-weight:bolder">
@@ -292,15 +241,7 @@
         <div class="col-md-1 text-center">
             <asp:Label CssClass="btn btn-warning btn-lg btn-block" ID="btnFinDowntime" runat="server" Text="0"></asp:Label>
         </div>
-        <div class="col-md-1 text-center">
-             <asp:Label CssClass="btn btn-warning btn-lg btn-block" ID="btnFinINQ" runat="server" Text="0"></asp:Label>
-        </div>
-        <div class="col-md-1 text-center">
-             <asp:Label CssClass="btn btn-warning btn-lg btn-block" ID="btnFinWIP" runat="server" Text="0"></asp:Label>
-        </div>
-        <div class="col-md-1 text-center">
-             <asp:Label CssClass="btn btn-warning btn-lg btn-block" ID="btnFinOutQ" runat="server" Text="0"></asp:Label>
-        </div>
+     
 
     </div>
     <br />
@@ -342,9 +283,7 @@
             <asp:Label ID="Label39" runat="server" Text="AQL Pass %"></asp:Label>
            
         </div>
-        <div class="col-md-1 text-center">
-            <asp:Label ID="Label40" runat="server" Text="WIP-SEW to FIN"></asp:Label>
-        </div>
+       
     </div>
 
     <div class="row" style="padding-left:150px;font-weight:bolder">
@@ -375,9 +314,74 @@
         <div class="col-md-1 text-center">
              <asp:Label CssClass="btn btn-danger btn-lg btn-block" ID="btnTotAQL" runat="server" Text="0"></asp:Label>
         </div>
-        <div class="col-md-1 text-center">
-             <asp:Label CssClass="btn btn-danger btn-lg btn-block" ID="btnTotWIP" runat="server" Text="0"></asp:Label>
-        </div>
+      
     </div>
     
+     <hr />
+    <div class="row" style="padding-left:150px;font-weight:bolder">
+         <div class="col-md-1 text-center">
+             <asp:Label ID="Label18" runat="server" Text=" "></asp:Label>
+         </div>
+
+        <div class="col-md-1 text-center">
+            <asp:Label ID="Label5" runat="server" Text="WIP at Cutting"></asp:Label>
+           
+        </div>
+        <div class="col-md-1 text-center">
+            <asp:Label ID="Label6" runat="server" Text="WIP at BUN"></asp:Label>
+           
+        </div>
+        <div class="col-md-1 text-center">
+            <asp:Label ID="Label7" runat="server" Text="WIP After BUN"></asp:Label>
+           
+        </div>
+         <div class="col-md-1 text-center">
+            <asp:Label ID="Label16" runat="server" Text="WIP at Sewing"></asp:Label>
+        </div>
+         <div class="col-md-1 text-center">
+            <asp:Label ID="Label27" runat="server" Text="WIP After AQL"></asp:Label>
+           
+        </div>
+        <div class="col-md-1 text-center">
+            <asp:Label ID="Label28" runat="server" Text="WIP at FIN"></asp:Label>
+           
+        </div>
+        <div class="col-md-1 text-center">
+            <asp:Label ID="Label29" runat="server" Text="WIP After FIN"></asp:Label>
+        </div>
+        <div class="col-md-1 text-center">
+            <asp:Label ID="Label40" runat="server" Text="WIP-SEW-FIN"></asp:Label>
+        </div>
+    </div>
+
+    <div class="row" style="padding-left:150px;font-weight:bolder">
+          <div class="col-md-1 text-center" style="padding-top:10px; font-weight:bolder; color:red">
+            <asp:Label ID="Label19" runat="server" Text="WIP DETAILS"></asp:Label>
+        </div>
+          <div class="col-md-1 text-center">
+             <asp:Label CssClass="btn btn-primary btn-lg btn-block" ID="btnBunINQ" runat="server" Text="0"></asp:Label>
+        </div>
+        <div class="col-md-1 text-center">
+             <asp:Label CssClass="btn btn-primary btn-lg btn-block" ID="btnBunWIP" runat="server" Text="0"></asp:Label>
+        </div>
+        <div class="col-md-1 text-center">
+             <asp:Label CssClass="btn btn-primary btn-lg btn-block" ID="btnBunOutQ" runat="server" Text="0"></asp:Label>
+        </div>
+          <div class="col-md-1 text-center">
+             <asp:Label CssClass="btn btn-success btn-lg btn-block" ID="btnSewWIP" runat="server" Text="0"></asp:Label>
+        </div>
+         <div class="col-md-1 text-center">
+             <asp:Label CssClass="btn btn-warning btn-lg btn-block" ID="btnFinINQ" runat="server" Text="0"></asp:Label>
+        </div>
+        <div class="col-md-1 text-center">
+             <asp:Label CssClass="btn btn-warning btn-lg btn-block" ID="btnFinWIP" runat="server" Text="0"></asp:Label>
+        </div>
+        <div class="col-md-1 text-center">
+             <asp:Label CssClass="btn btn-warning btn-lg btn-block" ID="btnFinOutQ" runat="server" Text="0"></asp:Label>
+        </div>
+
+          <div class="col-md-1 text-center">
+             <asp:Label CssClass="btn btn-danger btn-lg btn-block" ID="btnTotWIP" runat="server" Text="0"></asp:Label>
+        </div>
+     </div>
 </asp:Content>
