@@ -185,5 +185,55 @@ namespace ManagementDashboard
                                     "FROM ManagementDashboard " +
                                     "GROUP BY SortOrder, Code " +
                                     "ORDER BY SortOrder";
+
+        public string WPTotal = "SELECT IIF(SUM(ISNULL(Clocked_Minutes,0)) > 0, (CONVERT(DECIMAL(10, 2),SUM(ISNULL(C_Out_Achieved_Minutes,0))/SUM(ISNULL(Clocked_Minutes,0))))*100,0) as 'C-OUT Efficiency', " +
+                                       "SUM(ISNULL(C_OUT,0)) as 'C-OUT', " +
+                                       "(CONVERT(DECIMAL(10, 2),(SUM(ISNULL(C_OUT_Achieved_Minutes,0))/60))) as 'C-OUT SAH', " +
+                                       "IIF(SUM(ISNULL(Clocked_Minutes,0)) > 0, (CONVERT(DECIMAL(10, 2),SUM(ISNULL(L_OUT_Achieved_Minutes,0))/SUM(ISNULL(Clocked_Minutes,0))))*100,0) as 'L-OUT Efficiency', " +
+                                       "SUM(ISNULL(L_OUT,0)) as 'L-OUT', " +
+                                       "(CONVERT(DECIMAL(10, 2),(SUM(ISNULL(L_OUT_Achieved_Minutes,0))/60))) as 'L-OUT SAH', " +
+                                       "SUM(ISNULL(Present_Employees,0)) as 'Present Employees', " +
+                                       "IIF(SUM(ISNULL(Registered_Employees,0)) > 0, (CONVERT(DECIMAL(10, 2),SUM(ISNULL(Absent_Employees,0))/SUM(ISNULL(Registered_Employees,0))))*100,0) as 'Absenteesm', " +
+                                       "(CONVERT(DECIMAL(10, 2),(SUM(ISNULL(Downtime,0))/60))) as 'Downtime Hrs', " +
+                                       "IIF(SUM(ISNULL(ILQPiecesChecked,0)) > 0, (CONVERT(DECIMAL(10, 2),SUM(ISNULL(ILQDefects,0))/SUM(ISNULL(ILQPiecesChecked,0))))*100,0) as 'ILQ', " +
+                                       "IIF(SUM(ISNULL(AQLPiecesChecked,0)) > 0, (CONVERT(DECIMAL(10, 2),(SUM(ISNULL(AQLPiecesChecked,0))-SUM(ISNULL(AQLPiecesFailed,0)))/SUM(ISNULL(AQLPiecesChecked,0))))*100,0) as 'AQL', " +
+                                       "SUM(ISNULL(INQ,0)) as 'INQ', " +
+                                       "SUM(ISNULL(WIP,0)) as 'WIP', " +
+                                       "SUM(ISNULL(OUTQ,0)) as 'OUTQ' " +
+                                "FROM ManagementDashboard " +
+                                "WHERE Province = 'WP'";
+
+        public string CPTotal = "SELECT IIF(SUM(ISNULL(Clocked_Minutes,0)) > 0, (CONVERT(DECIMAL(10, 2),SUM(ISNULL(C_Out_Achieved_Minutes,0))/SUM(ISNULL(Clocked_Minutes,0))))*100,0) as 'C-OUT Efficiency', " +
+                                       "SUM(ISNULL(C_OUT,0)) as 'C-OUT', " +
+                                       "(CONVERT(DECIMAL(10, 2),(SUM(ISNULL(C_OUT_Achieved_Minutes,0))/60))) as 'C-OUT SAH', " +
+                                       "IIF(SUM(ISNULL(Clocked_Minutes,0)) > 0, (CONVERT(DECIMAL(10, 2),SUM(ISNULL(L_OUT_Achieved_Minutes,0))/SUM(ISNULL(Clocked_Minutes,0))))*100,0) as 'L-OUT Efficiency', " +
+                                       "SUM(ISNULL(L_OUT,0)) as 'L-OUT', " +
+                                       "(CONVERT(DECIMAL(10, 2),(SUM(ISNULL(L_OUT_Achieved_Minutes,0))/60))) as 'L-OUT SAH', " +
+                                       "SUM(ISNULL(Present_Employees,0)) as 'Present Employees', " +
+                                       "IIF(SUM(ISNULL(Registered_Employees,0)) > 0, (CONVERT(DECIMAL(10, 2),SUM(ISNULL(Absent_Employees,0))/SUM(ISNULL(Registered_Employees,0))))*100,0) as 'Absenteesm', " +
+                                       "(CONVERT(DECIMAL(10, 2),(SUM(ISNULL(Downtime,0))/60))) as 'Downtime Hrs', " +
+                                       "IIF(SUM(ISNULL(ILQPiecesChecked,0)) > 0, (CONVERT(DECIMAL(10, 2),SUM(ISNULL(ILQDefects,0))/SUM(ISNULL(ILQPiecesChecked,0))))*100,0) as 'ILQ', " +
+                                       "IIF(SUM(ISNULL(AQLPiecesChecked,0)) > 0, (CONVERT(DECIMAL(10, 2),(SUM(ISNULL(AQLPiecesChecked,0))-SUM(ISNULL(AQLPiecesFailed,0)))/SUM(ISNULL(AQLPiecesChecked,0))))*100,0) as 'AQL', " +
+                                       "SUM(ISNULL(INQ,0)) as 'INQ', " +
+                                       "SUM(ISNULL(WIP,0)) as 'WIP', " +
+                                       "SUM(ISNULL(OUTQ,0)) as 'OUTQ' " +
+                                "FROM ManagementDashboard " +
+                                "WHERE Province = 'CP'";
+
+        public string CMSLTotal = "SELECT IIF(SUM(ISNULL(Clocked_Minutes,0)) > 0, (CONVERT(DECIMAL(10, 2),SUM(ISNULL(C_Out_Achieved_Minutes,0))/SUM(ISNULL(Clocked_Minutes,0))))*100,0) as 'C-OUT Efficiency', " +
+                                       "SUM(ISNULL(C_OUT,0)) as 'C-OUT', " +
+                                       "(CONVERT(DECIMAL(10, 2),(SUM(ISNULL(C_OUT_Achieved_Minutes,0))/60))) as 'C-OUT SAH', " +
+                                       "IIF(SUM(ISNULL(Clocked_Minutes,0)) > 0, (CONVERT(DECIMAL(10, 2),SUM(ISNULL(L_OUT_Achieved_Minutes,0))/SUM(ISNULL(Clocked_Minutes,0))))*100,0) as 'L-OUT Efficiency', " +
+                                       "SUM(ISNULL(L_OUT,0)) as 'L-OUT', " +
+                                       "(CONVERT(DECIMAL(10, 2),(SUM(ISNULL(L_OUT_Achieved_Minutes,0))/60))) as 'L-OUT SAH', " +
+                                       "SUM(ISNULL(Present_Employees,0)) as 'Present Employees', " +
+                                       "IIF(SUM(ISNULL(Registered_Employees,0)) > 0, (CONVERT(DECIMAL(10, 2),SUM(ISNULL(Absent_Employees,0))/SUM(ISNULL(Registered_Employees,0))))*100,0) as 'Absenteesm', " +
+                                       "(CONVERT(DECIMAL(10, 2),(SUM(ISNULL(Downtime,0))/60))) as 'Downtime Hrs', " +
+                                       "IIF(SUM(ISNULL(ILQPiecesChecked,0)) > 0, (CONVERT(DECIMAL(10, 2),SUM(ISNULL(ILQDefects,0))/SUM(ISNULL(ILQPiecesChecked,0))))*100,0) as 'ILQ', " +
+                                       "IIF(SUM(ISNULL(AQLPiecesChecked,0)) > 0, (CONVERT(DECIMAL(10, 2),(SUM(ISNULL(AQLPiecesChecked,0))-SUM(ISNULL(AQLPiecesFailed,0)))/SUM(ISNULL(AQLPiecesChecked,0))))*100,0) as 'AQL', " +
+                                       "SUM(ISNULL(INQ,0)) as 'INQ', " +
+                                       "SUM(ISNULL(WIP,0)) as 'WIP', " +
+                                       "SUM(ISNULL(OUTQ,0)) as 'OUTQ' " +
+                                "FROM ManagementDashboard";
     }
 }

@@ -346,7 +346,7 @@
            
         </div>
         <div class="col-md-1 text-center">
-            <asp:Label ID="Label40" runat="server" Text="WIP-Sewing to Finishing"></asp:Label>
+            <asp:Label ID="Label40" runat="server" Text="WIP-SEW to FIN"></asp:Label>
         </div>
     </div>
 
