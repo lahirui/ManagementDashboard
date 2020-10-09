@@ -148,85 +148,85 @@ namespace ManagementDashboard {
         protected global::System.Web.UI.WebControls.Label lblArea;
         
         /// <summary>
-        /// btnBunEfficiency control.
+        /// btnCMEBunEfficiency control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnBunEfficiency;
+        protected global::System.Web.UI.WebControls.Label btnCMEBunEfficiency;
         
         /// <summary>
-        /// btnBunOutput control.
+        /// btnCMEBunOutput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnBunOutput;
+        protected global::System.Web.UI.WebControls.Label btnCMEBunOutput;
         
         /// <summary>
-        /// btnBunSAH control.
+        /// btnCMEBunSAH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnBunSAH;
+        protected global::System.Web.UI.WebControls.Label btnCMEBunSAH;
         
         /// <summary>
-        /// btnBunHC control.
+        /// btnCMEBunHC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnBunHC;
+        protected global::System.Web.UI.WebControls.Label btnCMEBunHC;
         
         /// <summary>
-        /// btnBunAbsenteesm control.
+        /// btnCMEBunAbsenteesm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnBunAbsenteesm;
+        protected global::System.Web.UI.WebControls.Label btnCMEBunAbsenteesm;
         
         /// <summary>
-        /// btnBunDowntime control.
+        /// btnCMEBunDowntime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnBunDowntime;
+        protected global::System.Web.UI.WebControls.Label btnCMEBunDowntime;
         
         /// <summary>
-        /// btnBunINQ control.
+        /// btnCMEBunINQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnBunINQ;
+        protected global::System.Web.UI.WebControls.Label btnCMEBunINQ;
         
         /// <summary>
-        /// btnBunWIP control.
+        /// btnCMEBunWIP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnBunWIP;
+        protected global::System.Web.UI.WebControls.Label btnCMEBunWIP;
         
         /// <summary>
-        /// btnBunOutQ control.
+        /// btnCMEBunOutQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnBunOutQ;
+        protected global::System.Web.UI.WebControls.Label btnCMEBunOutQ;
         
         /// <summary>
         /// Label2 control.
@@ -355,112 +355,112 @@ namespace ManagementDashboard {
         protected global::System.Web.UI.WebControls.Label Label17;
         
         /// <summary>
-        /// btnSewEff control.
+        /// btnCMESewEff control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnSewEff;
+        protected global::System.Web.UI.WebControls.Label btnCMESewEff;
         
         /// <summary>
-        /// btnSewOut control.
+        /// btnCMESewOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnSewOut;
+        protected global::System.Web.UI.WebControls.Label btnCMESewOut;
         
         /// <summary>
-        /// btnSewSAH control.
+        /// btnCMESewSAH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnSewSAH;
+        protected global::System.Web.UI.WebControls.Label btnCMESewSAH;
         
         /// <summary>
-        /// btnSewHC control.
+        /// btnCMESewHC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnSewHC;
+        protected global::System.Web.UI.WebControls.Label btnCMESewHC;
         
         /// <summary>
-        /// btnSewAbsent control.
+        /// btnCMESewAbsent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnSewAbsent;
+        protected global::System.Web.UI.WebControls.Label btnCMESewAbsent;
         
         /// <summary>
-        /// btnSewDowntime control.
+        /// btnCMESewDowntime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnSewDowntime;
+        protected global::System.Web.UI.WebControls.Label btnCMESewDowntime;
         
         /// <summary>
-        /// BtnSewILQ control.
+        /// btnCMESewILQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BtnSewILQ;
+        protected global::System.Web.UI.WebControls.Label btnCMESewILQ;
         
         /// <summary>
-        /// BtnSewAQL control.
+        /// btnCMESewAQL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BtnSewAQL;
+        protected global::System.Web.UI.WebControls.Label btnCMESewAQL;
         
         /// <summary>
-        /// btnSewWIP control.
+        /// btnCMESewWIP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnSewWIP;
+        protected global::System.Web.UI.WebControls.Label btnCMESewWIP;
         
         /// <summary>
-        /// Label50 control.
+        /// btnCMESewLoutEff control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label50;
+        protected global::System.Web.UI.WebControls.Label btnCMESewLoutEff;
         
         /// <summary>
-        /// Label51 control.
+        /// btnCMESewLOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label51;
+        protected global::System.Web.UI.WebControls.Label btnCMESewLOut;
         
         /// <summary>
-        /// Label52 control.
+        /// btnCMESewLOutSAH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label52;
+        protected global::System.Web.UI.WebControls.Label btnCMESewLOutSAH;
         
         /// <summary>
         /// Label20 control.
@@ -562,85 +562,85 @@ namespace ManagementDashboard {
         protected global::System.Web.UI.WebControls.Label Label32;
         
         /// <summary>
-        /// btnFinEff control.
+        /// btnCMEFinEff control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnFinEff;
+        protected global::System.Web.UI.WebControls.Label btnCMEFinEff;
         
         /// <summary>
-        /// btnFinOutput control.
+        /// btnCMEFinOutput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnFinOutput;
+        protected global::System.Web.UI.WebControls.Label btnCMEFinOutput;
         
         /// <summary>
-        /// btnFinSAH control.
+        /// btnCMEFinSAH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnFinSAH;
+        protected global::System.Web.UI.WebControls.Label btnCMEFinSAH;
         
         /// <summary>
-        /// btnFinHC control.
+        /// btnCMEFinHC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnFinHC;
+        protected global::System.Web.UI.WebControls.Label btnCMEFinHC;
         
         /// <summary>
-        /// btnFinAbsent control.
+        /// btnCMEFinAbsent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnFinAbsent;
+        protected global::System.Web.UI.WebControls.Label btnCMEFinAbsent;
         
         /// <summary>
-        /// btnFinDowntime control.
+        /// btnCMEFinDowntime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnFinDowntime;
+        protected global::System.Web.UI.WebControls.Label btnCMEFinDowntime;
         
         /// <summary>
-        /// btnFinINQ control.
+        /// btnCMEFinINQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnFinINQ;
+        protected global::System.Web.UI.WebControls.Label btnCMEFinINQ;
         
         /// <summary>
-        /// btnFinWIP control.
+        /// btnCMEFinWIP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnFinWIP;
+        protected global::System.Web.UI.WebControls.Label btnCMEFinWIP;
         
         /// <summary>
-        /// btnFinOutQ control.
+        /// btnCMEFinOutQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnFinOutQ;
+        protected global::System.Web.UI.WebControls.Label btnCMEFinOutQ;
         
         /// <summary>
         /// Label42 control.
@@ -760,85 +760,85 @@ namespace ManagementDashboard {
         protected global::System.Web.UI.WebControls.Label Label60;
         
         /// <summary>
-        /// Label61 control.
+        /// btnCMGMBunEfficiency control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label61;
+        protected global::System.Web.UI.WebControls.Label btnCMGMBunEfficiency;
         
         /// <summary>
-        /// Label62 control.
+        /// btnCMGMBunOutput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label62;
+        protected global::System.Web.UI.WebControls.Label btnCMGMBunOutput;
         
         /// <summary>
-        /// Label63 control.
+        /// btnCMGMBunSAH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label63;
+        protected global::System.Web.UI.WebControls.Label btnCMGMBunSAH;
         
         /// <summary>
-        /// Label64 control.
+        /// btnCMGMBunHC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label64;
+        protected global::System.Web.UI.WebControls.Label btnCMGMBunHC;
         
         /// <summary>
-        /// Label65 control.
+        /// btnCMGMBunAbsenteesm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label65;
+        protected global::System.Web.UI.WebControls.Label btnCMGMBunAbsenteesm;
         
         /// <summary>
-        /// Label66 control.
+        /// btnCMGMBunDowntime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label66;
+        protected global::System.Web.UI.WebControls.Label btnCMGMBunDowntime;
         
         /// <summary>
-        /// Label67 control.
+        /// btnCMGMBunINQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label67;
+        protected global::System.Web.UI.WebControls.Label btnCMGMBunINQ;
         
         /// <summary>
-        /// Label68 control.
+        /// btnCMGMBunWIP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label68;
+        protected global::System.Web.UI.WebControls.Label btnCMGMBunWIP;
         
         /// <summary>
-        /// Label69 control.
+        /// btnCMGMBunOutQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label69;
+        protected global::System.Web.UI.WebControls.Label btnCMGMBunOutQ;
         
         /// <summary>
         /// Label70 control.
@@ -967,112 +967,112 @@ namespace ManagementDashboard {
         protected global::System.Web.UI.WebControls.Label Label83;
         
         /// <summary>
-        /// Label84 control.
+        /// btnCMGMSewEff control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label84;
+        protected global::System.Web.UI.WebControls.Label btnCMGMSewEff;
         
         /// <summary>
-        /// Label85 control.
+        /// btnCMGMSewOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label85;
+        protected global::System.Web.UI.WebControls.Label btnCMGMSewOut;
         
         /// <summary>
-        /// Label86 control.
+        /// btnCMGMSewSAH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label86;
+        protected global::System.Web.UI.WebControls.Label btnCMGMSewSAH;
         
         /// <summary>
-        /// Label87 control.
+        /// btnCMGMSewHC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label87;
+        protected global::System.Web.UI.WebControls.Label btnCMGMSewHC;
         
         /// <summary>
-        /// Label88 control.
+        /// btnCMGMSewAbsent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label88;
+        protected global::System.Web.UI.WebControls.Label btnCMGMSewAbsent;
         
         /// <summary>
-        /// Label89 control.
+        /// btnCMGMSewDowntime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label89;
+        protected global::System.Web.UI.WebControls.Label btnCMGMSewDowntime;
         
         /// <summary>
-        /// Label90 control.
+        /// btnCMGMSewILQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label90;
+        protected global::System.Web.UI.WebControls.Label btnCMGMSewILQ;
         
         /// <summary>
-        /// Label91 control.
+        /// btnCMGMSewAQL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label91;
+        protected global::System.Web.UI.WebControls.Label btnCMGMSewAQL;
         
         /// <summary>
-        /// Label92 control.
+        /// btnCMGMSewWIP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label92;
+        protected global::System.Web.UI.WebControls.Label btnCMGMSewWIP;
         
         /// <summary>
-        /// Label93 control.
+        /// btnCMGMSewLoutEff control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label93;
+        protected global::System.Web.UI.WebControls.Label btnCMGMSewLoutEff;
         
         /// <summary>
-        /// Label94 control.
+        /// btnCMGMSewLOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label94;
+        protected global::System.Web.UI.WebControls.Label btnCMGMSewLOut;
         
         /// <summary>
-        /// Label95 control.
+        /// btnCMGMSewLOutSAH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label95;
+        protected global::System.Web.UI.WebControls.Label btnCMGMSewLOutSAH;
         
         /// <summary>
         /// Label96 control.
@@ -1174,85 +1174,85 @@ namespace ManagementDashboard {
         protected global::System.Web.UI.WebControls.Label Label106;
         
         /// <summary>
-        /// Label107 control.
+        /// btnCMGMFinEff control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label107;
+        protected global::System.Web.UI.WebControls.Label btnCMGMFinEff;
         
         /// <summary>
-        /// Label108 control.
+        /// btnCMGMFinOutput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label108;
+        protected global::System.Web.UI.WebControls.Label btnCMGMFinOutput;
         
         /// <summary>
-        /// Label109 control.
+        /// btnCMGMFinSAH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label109;
+        protected global::System.Web.UI.WebControls.Label btnCMGMFinSAH;
         
         /// <summary>
-        /// Label110 control.
+        /// btnCMGMFinHC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label110;
+        protected global::System.Web.UI.WebControls.Label btnCMGMFinHC;
         
         /// <summary>
-        /// Label111 control.
+        /// btnCMGMFinAbsent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label111;
+        protected global::System.Web.UI.WebControls.Label btnCMGMFinAbsent;
         
         /// <summary>
-        /// Label112 control.
+        /// btnCMGMFinDowntime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label112;
+        protected global::System.Web.UI.WebControls.Label btnCMGMFinDowntime;
         
         /// <summary>
-        /// Label113 control.
+        /// btnCMGMFinINQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label113;
+        protected global::System.Web.UI.WebControls.Label btnCMGMFinINQ;
         
         /// <summary>
-        /// Label114 control.
+        /// btnCMGMFinWIP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label114;
+        protected global::System.Web.UI.WebControls.Label btnCMGMFinWIP;
         
         /// <summary>
-        /// Label115 control.
+        /// btnCMGMFinOutQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label115;
+        protected global::System.Web.UI.WebControls.Label btnCMGMFinOutQ;
         
         /// <summary>
         /// Label136 control.
@@ -1372,85 +1372,85 @@ namespace ManagementDashboard {
         protected global::System.Web.UI.WebControls.Label Label148;
         
         /// <summary>
-        /// Label149 control.
+        /// btnCMWBunEfficiency control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label149;
+        protected global::System.Web.UI.WebControls.Label btnCMWBunEfficiency;
         
         /// <summary>
-        /// Label150 control.
+        /// btnCMWBunOutput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label150;
+        protected global::System.Web.UI.WebControls.Label btnCMWBunOutput;
         
         /// <summary>
-        /// Label151 control.
+        /// btnCMWBunSAH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label151;
+        protected global::System.Web.UI.WebControls.Label btnCMWBunSAH;
         
         /// <summary>
-        /// Label152 control.
+        /// btnCMWBunHC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label152;
+        protected global::System.Web.UI.WebControls.Label btnCMWBunHC;
         
         /// <summary>
-        /// Label153 control.
+        /// btnCMWBunAbsenteesm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label153;
+        protected global::System.Web.UI.WebControls.Label btnCMWBunAbsenteesm;
         
         /// <summary>
-        /// Label154 control.
+        /// btnCMWBunDowntime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label154;
+        protected global::System.Web.UI.WebControls.Label btnCMWBunDowntime;
         
         /// <summary>
-        /// Label155 control.
+        /// btnCMWBunINQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label155;
+        protected global::System.Web.UI.WebControls.Label btnCMWBunINQ;
         
         /// <summary>
-        /// Label156 control.
+        /// btnCMWBunWIP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label156;
+        protected global::System.Web.UI.WebControls.Label btnCMWBunWIP;
         
         /// <summary>
-        /// Label157 control.
+        /// btnCMWBunOutQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label157;
+        protected global::System.Web.UI.WebControls.Label btnCMWBunOutQ;
         
         /// <summary>
         /// Label158 control.
@@ -1579,112 +1579,112 @@ namespace ManagementDashboard {
         protected global::System.Web.UI.WebControls.Label Label171;
         
         /// <summary>
-        /// Label172 control.
+        /// btnCMWSewEff control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label172;
+        protected global::System.Web.UI.WebControls.Label btnCMWSewEff;
         
         /// <summary>
-        /// Label173 control.
+        /// btnCMWSewOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label173;
+        protected global::System.Web.UI.WebControls.Label btnCMWSewOut;
         
         /// <summary>
-        /// Label174 control.
+        /// btnCMWSewSAH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label174;
+        protected global::System.Web.UI.WebControls.Label btnCMWSewSAH;
         
         /// <summary>
-        /// Label175 control.
+        /// btnCMWSewHC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label175;
+        protected global::System.Web.UI.WebControls.Label btnCMWSewHC;
         
         /// <summary>
-        /// Label176 control.
+        /// btnCMWSewAbsent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label176;
+        protected global::System.Web.UI.WebControls.Label btnCMWSewAbsent;
         
         /// <summary>
-        /// Label177 control.
+        /// btnCMWSewDowntime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label177;
+        protected global::System.Web.UI.WebControls.Label btnCMWSewDowntime;
         
         /// <summary>
-        /// Label178 control.
+        /// btnCMWSewILQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label178;
+        protected global::System.Web.UI.WebControls.Label btnCMWSewILQ;
         
         /// <summary>
-        /// Label179 control.
+        /// btnCMWSewAQL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label179;
+        protected global::System.Web.UI.WebControls.Label btnCMWSewAQL;
         
         /// <summary>
-        /// Label180 control.
+        /// btnCMWSewWIP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label180;
+        protected global::System.Web.UI.WebControls.Label btnCMWSewWIP;
         
         /// <summary>
-        /// Label181 control.
+        /// btnCMWSewLoutEff control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label181;
+        protected global::System.Web.UI.WebControls.Label btnCMWSewLoutEff;
         
         /// <summary>
-        /// Label182 control.
+        /// btnCMWSewLOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label182;
+        protected global::System.Web.UI.WebControls.Label btnCMWSewLOut;
         
         /// <summary>
-        /// Label183 control.
+        /// btnCMWSewLOutSAH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label183;
+        protected global::System.Web.UI.WebControls.Label btnCMWSewLOutSAH;
         
         /// <summary>
         /// Label184 control.
@@ -1786,84 +1786,84 @@ namespace ManagementDashboard {
         protected global::System.Web.UI.WebControls.Label Label194;
         
         /// <summary>
-        /// Label195 control.
+        /// btnCMWFinEff control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label195;
+        protected global::System.Web.UI.WebControls.Label btnCMWFinEff;
         
         /// <summary>
-        /// Label196 control.
+        /// btnCMWFinOutput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label196;
+        protected global::System.Web.UI.WebControls.Label btnCMWFinOutput;
         
         /// <summary>
-        /// Label197 control.
+        /// btnCMWFinSAH control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label197;
+        protected global::System.Web.UI.WebControls.Label btnCMWFinSAH;
         
         /// <summary>
-        /// Label198 control.
+        /// btnCMWFinHC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label198;
+        protected global::System.Web.UI.WebControls.Label btnCMWFinHC;
         
         /// <summary>
-        /// Label199 control.
+        /// btnCMWFinAbsent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label199;
+        protected global::System.Web.UI.WebControls.Label btnCMWFinAbsent;
         
         /// <summary>
-        /// Label200 control.
+        /// btnCMWFinDowntime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label200;
+        protected global::System.Web.UI.WebControls.Label btnCMWFinDowntime;
         
         /// <summary>
-        /// Label201 control.
+        /// btnCMWFinINQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label201;
+        protected global::System.Web.UI.WebControls.Label btnCMWFinINQ;
         
         /// <summary>
-        /// Label202 control.
+        /// btnCMWFinWIP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label202;
+        protected global::System.Web.UI.WebControls.Label btnCMWFinWIP;
         
         /// <summary>
-        /// Label203 control.
+        /// btnCMWFinOutQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label203;
+        protected global::System.Web.UI.WebControls.Label btnCMWFinOutQ;
     }
 }

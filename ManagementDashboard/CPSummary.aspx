@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="CP Summary" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="CPSummary.aspx.cs" Inherits="ManagementDashboard.CPSummary" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="SubContent" runat="server">
-    <meta http-equiv="refresh" content="30;url=Default.aspx" />
+   <%-- <meta http-equiv="refresh" content="30;url=Default.aspx" />--%>
 
 <div class="row text-center">
          <div class="col-md-3 text-center" style="padding-top:10px">
@@ -71,31 +71,31 @@
             <asp:Label ID="lblArea" runat="server" Text="BUNDLING"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:label CssClass="btn btn-primary  btn-sm btn-block" ID="btnBunEfficiency" runat="server" Text="0"></asp:label>
+             <asp:label CssClass="btn btn-primary  btn-sm btn-block" ID="btnCMCDBunEfficiency" runat="server" Text="0"></asp:label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnBunOutput" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDBunOutput" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnBunSAH" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDBunSAH" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnBunHC" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDBunHC" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnBunAbsenteesm" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDBunAbsenteesm" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-            <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnBunDowntime" runat="server" Text="0"></asp:Label>
+            <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDBunDowntime" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnBunINQ" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDBunINQ" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnBunWIP" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDBunWIP" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnBunOutQ" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDBunOutQ" runat="server" Text="0"></asp:Label>
         </div>
 
     </div>
@@ -163,40 +163,40 @@
             <asp:Label ID="Label17" runat="server" Text="SEWING"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:label CssClass="btn btn-success btn-sm btn-block " ID="btnSewEff" runat="server" Text="0"></asp:label>
+             <asp:label CssClass="btn btn-success btn-sm btn-block " ID="btnCMCDSewEff" runat="server" Text="0"></asp:label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnSewOut" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCDSewOut" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnSewSAH" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCDSewSAH" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnSewHC" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCDSewHC" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block " ID="btnSewAbsent" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block " ID="btnCMCDSewAbsent" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-            <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnSewDowntime" runat="server" Text="0"></asp:Label>
+            <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCDSewDowntime" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="BtnSewILQ" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="BtnCMCDSewILQ" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="BtnSewAQL" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="BtnCMCDSewAQL" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnSewWIP" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCDSewWIP" runat="server" Text="0"></asp:Label>
         </div>
          <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label50" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCDSewLoutEff" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label51" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCDSEWLOut" runat="server" Text="0"></asp:Label>
         </div>
          <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label52" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCDSewLOutSAH" runat="server" Text="0"></asp:Label>
         </div>
 
     </div>
@@ -251,31 +251,31 @@
             <asp:Label ID="Label32" runat="server" Text="FINISHING"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:label CssClass="btn btn-warning btn-sm btn-block" ID="btnFinEff" runat="server" Text="0"></asp:label>
+             <asp:label CssClass="btn btn-primary  btn-sm btn-block" ID="btnCMCDFinEfficiency" runat="server" Text="0"></asp:label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="btnFinOutput" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDFinOutput" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="btnFinSAH" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDFinSAH" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="btnFinHC" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDFinHC" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="btnFinAbsent" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDFinAbsenteesm" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-            <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="btnFinDowntime" runat="server" Text="0"></asp:Label>
+            <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDFinDowntime" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="btnFinINQ" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDFinINQ" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="btnFinWIP" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDFinWIP" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="btnFinOutQ" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCDFinOutQ" runat="server" Text="0"></asp:Label>
         </div>
 
     </div>
@@ -412,31 +412,31 @@
             <asp:Label ID="Label60" runat="server" Text="BUNDLING"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:label CssClass="btn btn-primary  btn-sm btn-block" ID="Label61" runat="server" Text="0"></asp:label>
+             <asp:label CssClass="btn btn-primary  btn-sm btn-block" ID="btnCMCGBunEfficiency" runat="server" Text="0"></asp:label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label62" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGBunOutput" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label63" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGBunSAH" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label64" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGBunHC" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label65" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGBunAbsenteesm" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-            <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label66" runat="server" Text="0"></asp:Label>
+            <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGBunDowntime" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label67" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGBunINQ" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label68" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGBunWIP" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label69" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGBunOutQ" runat="server" Text="0"></asp:Label>
         </div>
 
     </div>
@@ -504,40 +504,40 @@
             <asp:Label ID="Label83" runat="server" Text="SEWING"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:label CssClass="btn btn-success btn-sm btn-block " ID="Label84" runat="server" Text="0"></asp:label>
+             <asp:label CssClass="btn btn-success btn-sm btn-block " ID="btnCMCGSewEff" runat="server" Text="0"></asp:label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label85" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCGSewOut" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label86" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCGSewSAH" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label87" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCGSewHC" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block " ID="Label88" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block " ID="btnCMCGSewAbsent" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-            <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label89" runat="server" Text="0"></asp:Label>
+            <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCGSewDowntime" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label90" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="BtnCMCGSewILQ" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label91" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="BtnCMCGSewAQL" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label92" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCGSewWIP" runat="server" Text="0"></asp:Label>
         </div>
          <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label93" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCGSewLoutEff" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label94" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCGSEWLOut" runat="server" Text="0"></asp:Label>
         </div>
          <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label95" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMCGSewLOutSAH" runat="server" Text="0"></asp:Label>
         </div>
 
     </div>
@@ -592,31 +592,31 @@
             <asp:Label ID="Label106" runat="server" Text="FINISHING"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:label CssClass="btn btn-warning btn-sm btn-block" ID="Label107" runat="server" Text="0"></asp:label>
+             <asp:label CssClass="btn btn-primary  btn-sm btn-block" ID="btnCMCGFinEfficiency" runat="server" Text="0"></asp:label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label108" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGFinOutput" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label109" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGFinSAH" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label110" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGFinHC" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label111" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGFinAbsenteesm" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-            <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label112" runat="server" Text="0"></asp:Label>
+            <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGFinDowntime" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label113" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGFinINQ" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label114" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGFinWIP" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label115" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMCGFinOutQ" runat="server" Text="0"></asp:Label>
         </div>
 
     </div>
@@ -753,31 +753,31 @@
             <asp:Label ID="Label148" runat="server" Text="BUNDLING"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:label CssClass="btn btn-primary  btn-sm btn-block" ID="Label149" runat="server" Text="0"></asp:label>
+             <asp:label CssClass="btn btn-primary  btn-sm btn-block" ID="btnCMPKBunEfficiency" runat="server" Text="0"></asp:label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label150" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKBunOutput" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label151" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKBunSAH" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label152" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKBunHC" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label153" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKBunAbsenteesm" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-            <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label154" runat="server" Text="0"></asp:Label>
+            <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKBunDowntime" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label155" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKBunINQ" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label156" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKBunWIP" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="Label157" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKBunOutQ" runat="server" Text="0"></asp:Label>
         </div>
 
     </div>
@@ -845,40 +845,40 @@
             <asp:Label ID="Label171" runat="server" Text="SEWING"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:label CssClass="btn btn-success btn-sm btn-block " ID="Label172" runat="server" Text="0"></asp:label>
+             <asp:label CssClass="btn btn-success btn-sm btn-block " ID="btnCMPKSewEff" runat="server" Text="0"></asp:label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label173" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMPKSewOut" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label174" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMPKSewSAH" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label175" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMPKSewHC" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block " ID="Label176" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block " ID="btnCMPKSewAbsent" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-            <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label177" runat="server" Text="0"></asp:Label>
+            <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMPKSewDowntime" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label178" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="BtnCMPKSewILQ" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label179" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="BtnCMPKSewAQL" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label180" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMPKSewWIP" runat="server" Text="0"></asp:Label>
         </div>
          <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label181" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMPKSewLoutEff" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label182" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMPKSEWLOut" runat="server" Text="0"></asp:Label>
         </div>
          <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="Label183" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-success btn-sm btn-block" ID="btnCMPKSewLOutSAH" runat="server" Text="0"></asp:Label>
         </div>
 
     </div>
@@ -931,32 +931,32 @@
         <div class="col-md-1 text-center" style="padding-top:5px;font-weight:bolder; color:darkorange">
             <asp:Label ID="Label194" runat="server" Text="FINISHING"></asp:Label>
         </div>
-        <div class="col-md-1 text-center" style="width:120px">
-             <asp:label CssClass="btn btn-warning btn-sm btn-block" ID="Label195" runat="server" Text="0"></asp:label>
+       <div class="col-md-1 text-center" style="width:120px">
+             <asp:label CssClass="btn btn-primary  btn-sm btn-block" ID="btnCMPKFinEfficiency" runat="server" Text="0"></asp:label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label196" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKFinOutput" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label197" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKFinSAH" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label198" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKFinHC" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label199" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKFinAbsenteesm" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-            <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label200" runat="server" Text="0"></asp:Label>
+            <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKFinDowntime" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label201" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKFinINQ" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label202" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKFinWIP" runat="server" Text="0"></asp:Label>
         </div>
         <div class="col-md-1 text-center" style="width:120px">
-             <asp:Label CssClass="btn btn-warning btn-sm btn-block" ID="Label203" runat="server" Text="0"></asp:Label>
+             <asp:Label CssClass="btn btn-primary btn-sm btn-block" ID="btnCMPKFinOutQ" runat="server" Text="0"></asp:Label>
         </div>
 
     </div>
