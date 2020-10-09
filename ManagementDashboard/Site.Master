@@ -20,9 +20,10 @@
 </head>
 <body>
     <form runat="server">
-        <asp:ScriptManager runat="server">
+          <%--Framework Scripts--%>
+       <%-- <asp:ScriptManager runat="server">
             <Scripts>
-                <%--Framework Scripts--%>
+              
                 <asp:ScriptReference Name="MsAjaxBundle" />
                 <asp:ScriptReference Name="jquery" />
                 <asp:ScriptReference Name="bootstrap" />
@@ -35,10 +36,10 @@
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
+               
             </Scripts>
-        </asp:ScriptManager>
-
+        </asp:ScriptManager>--%>
+         <%--Site Scripts--%>
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -48,8 +49,13 @@
                         <span class="icon-bar"></span>
                     </button>
                    <%--  <a class="navbar-brand" runat="server" href="~/">HOME</a>--%>
+                    <div class="text-center" style="padding-top: 10px; font-size: x-large">
+                        <label><a runat="server" href="~/" class="glyphicon glyphicon-home"></a></label>
+                    </div>
                 </div>
                 <div class="navbar-collapse collapse">
+
+                     
 
                     <div class="text-center">
 
@@ -61,6 +67,8 @@
                         <asp:Button CssClass="btn btn-info btn-lg" ID="CMPKPage" runat="server" Text="CMPK" OnClick="CMPKPage_Click" />
                     </div>
                 </div>
+               
+
             </div>
         </div>
 
@@ -75,7 +83,7 @@
         </div>
 
         <%--<hr />--%>
-        <footer>
+       <%-- <footer>
             <div class="navbar navbar-inverse navbar-fixed-bottom">
                 <div class="container">
                     <div class="navbar-header">
@@ -95,7 +103,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer>--%>
     </form>
 </body>
 </html>
