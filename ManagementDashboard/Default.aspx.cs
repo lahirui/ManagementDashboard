@@ -13,11 +13,9 @@ namespace ManagementDashboard
 {
     public partial class _Default : Page
     {
-        //private SqlDataAdapter da;
-        //private DataSet ds = new DataSet();
-        //private DataTable dt = new DataTable();
         private Common common = new Common();
         private GridViewQueries gridViewQueries = new GridViewQueries();
+        int WIPtoFIN;
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!this.IsPostBack)
@@ -27,6 +25,7 @@ namespace ManagementDashboard
                 dsCMSL = common.ReturnDataSet(gridViewQueries.CMSLQuery);
                 if (dsCMSL.Tables[0].Rows.Count > 0)
                 {
+                   
                     btnBunEfficiency.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(1).ToString();
                     btnBunOutput.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(2).ToString();
                     btnBunSAH.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(3).ToString();
@@ -59,22 +58,25 @@ namespace ManagementDashboard
                     btnFinINQ.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(12).ToString();
                     btnFinWIP.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(13).ToString();
                     btnFinOutQ.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(14).ToString();
+
+                    DataSet dsTotal = new DataSet();
+                    dsTotal = common.ReturnDataSet(gridViewQueries.CMSLTotal);
+                    if (dsTotal.Tables[0].Rows.Count > 0)
+                    {
+                        btnTotAbsent.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(7).ToString();
+                        btnTotAQL.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(10).ToString();
+                        btnTotDowntime.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(8).ToString();
+                        btnTotEff.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(0).ToString();
+                        btnTotHC.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(6).ToString();
+                        btnTotILQ.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(9).ToString();
+                        btnTotOutput.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(1).ToString();
+                        btnTotSAH.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(2).ToString();
+                        WIPtoFIN = Convert.ToInt32(dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(12).ToString()) + Convert.ToInt32(dsTotal.Tables[0].Rows[0].ItemArray.GetValue(12).ToString());
+                        btnTotWIP.Text = Convert.ToString(WIPtoFIN);
+                    }
                 }
 
-                DataSet dsTotal = new DataSet();
-                dsTotal = common.ReturnDataSet(gridViewQueries.CMSLTotal);
-                if (dsTotal.Tables[0].Rows.Count > 0)
-                {
-                    btnTotAbsent.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(7).ToString();
-                    btnTotAQL.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(10).ToString();
-                    btnTotDowntime.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(8).ToString();
-                    btnTotEff.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(0).ToString();
-                    btnTotHC.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(6).ToString();
-                    btnTotILQ.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(9).ToString();
-                    btnTotOutput.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(1).ToString();
-                    btnTotSAH.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(2).ToString();
-                    btnTotWIP.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(12).ToString();
-                }
+               
             }
             
         }
