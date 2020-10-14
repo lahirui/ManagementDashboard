@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace ManagementDashboard
 {
@@ -11,7 +7,6 @@ namespace ManagementDashboard
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void CMEPage_Click(object sender, EventArgs e)
@@ -42,6 +37,21 @@ namespace ManagementDashboard
         protected void CMPKPage_Click(object sender, EventArgs e)
         {
             Response.Redirect("CMPK.aspx");
+        }
+
+        protected void CMSLPage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
+        }
+
+        protected void WPPage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WesternProvince.aspx");
+        }
+
+        protected void CPPage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CentralProvince.aspx");
         }
     }
 }

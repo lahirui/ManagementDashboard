@@ -50,7 +50,7 @@
                     </button>
                    <%--  <a class="navbar-brand" runat="server" href="~/">HOME</a>--%>
                     <div class="text-center" style="padding-top: 10px; font-size: x-large">
-                        <label><a runat="server" href="~/" class="glyphicon glyphicon-home"></a></label>
+                        <label><a runat="server" href="~/" class="glyphicon glyphicon-home" style="color:white"></a></label>
                     </div>
                 </div>
                 <div class="navbar-collapse collapse">
@@ -58,6 +58,9 @@
                      
 
                     <div class="text-center">
+                        <asp:Button CssClass="btn btn-success btn-lg" ID="CMSLPage" runat="server" Text="CMSL" OnClick="CMSLPage_Click" />
+                        <asp:Button CssClass="btn btn-success btn-lg" ID="WPPage" runat="server" Text="WP" OnClick="WPPage_Click" />
+                        <asp:Button CssClass="btn btn-success btn-lg" ID="CPPage" runat="server" Text="CP" OnClick="CPPage_Click" />
 
                         <asp:Button CssClass="btn btn-info btn-lg" ID="CMEPage" runat="server" Text="CME" OnClick="CMEPage_Click" />
                         <asp:Button CssClass="btn btn-info btn-lg" ID="CMGMPage" runat="server" Text="CMGM" OnClick="CMGMPage_Click" />

@@ -517,15 +517,6 @@ namespace ManagementDashboard {
         protected global::System.Web.UI.WebControls.Label Label31;
         
         /// <summary>
-        /// Label33 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label33;
-        
-        /// <summary>
         /// Label34 control.
         /// </summary>
         /// <remarks>
@@ -596,15 +587,6 @@ namespace ManagementDashboard {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label btnTotEff;
-        
-        /// <summary>
-        /// btnTotOutput control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label btnTotOutput;
         
         /// <summary>
         /// btnTotSAH control.

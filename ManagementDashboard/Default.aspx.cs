@@ -20,6 +20,8 @@ namespace ManagementDashboard
         {
             if(!this.IsPostBack)
             {
+                
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "RedirectAfterDelayFn();", true);
                 lblCMSLTime.Text = DateTime.Now.ToString("dd-MMM-yyyy hh:mm");
                 DataSet dsCMSL = new DataSet();
                 dsCMSL = common.ReturnDataSet(gridViewQueries.CMSLQuery);
@@ -69,7 +71,7 @@ namespace ManagementDashboard
                         btnTotEff.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(0).ToString();
                         btnTotHC.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(6).ToString();
                         btnTotILQ.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(9).ToString();
-                        btnTotOutput.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(1).ToString();
+                        //btnTotOutput.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(1).ToString();
                         btnTotSAH.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(2).ToString();
                         WIPtoFIN = Convert.ToInt32(dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(12).ToString()) + Convert.ToInt32(dsTotal.Tables[0].Rows[0].ItemArray.GetValue(12).ToString());
                         btnTotWIP.Text = Convert.ToString(WIPtoFIN);

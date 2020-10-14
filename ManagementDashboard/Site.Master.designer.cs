@@ -13,6 +13,33 @@ namespace ManagementDashboard {
     public partial class SiteMaster {
         
         /// <summary>
+        /// CMSLPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CMSLPage;
+        
+        /// <summary>
+        /// WPPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button WPPage;
+        
+        /// <summary>
+        /// CPPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CPPage;
+        
+        /// <summary>
         /// CMEPage control.
         /// </summary>
         /// <remarks>

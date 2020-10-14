@@ -311,6 +311,24 @@ namespace ManagementDashboard.Reports.DataSets {
             
             private global::System.Data.DataColumn columnOUTQ;
             
+            private global::System.Data.DataColumn columnCoutAchievedMinutes;
+            
+            private global::System.Data.DataColumn columnCoutClockedMinutes;
+            
+            private global::System.Data.DataColumn columnLOutAchievedMinutes;
+            
+            private global::System.Data.DataColumn columnAbsentEmployees;
+            
+            private global::System.Data.DataColumn columnRegisteredEmployees;
+            
+            private global::System.Data.DataColumn columnILQDefects;
+            
+            private global::System.Data.DataColumn columnILQPiecesChecked;
+            
+            private global::System.Data.DataColumn columnPassedGarments;
+            
+            private global::System.Data.DataColumn columnAQLPiecesChecked;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public CMESewDataTable() {
@@ -474,6 +492,78 @@ namespace ManagementDashboard.Reports.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CoutAchievedMinutesColumn {
+                get {
+                    return this.columnCoutAchievedMinutes;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CoutClockedMinutesColumn {
+                get {
+                    return this.columnCoutClockedMinutes;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn LOutAchievedMinutesColumn {
+                get {
+                    return this.columnLOutAchievedMinutes;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn AbsentEmployeesColumn {
+                get {
+                    return this.columnAbsentEmployees;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn RegisteredEmployeesColumn {
+                get {
+                    return this.columnRegisteredEmployees;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn ILQDefectsColumn {
+                get {
+                    return this.columnILQDefects;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn ILQPiecesCheckedColumn {
+                get {
+                    return this.columnILQPiecesChecked;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn PassedGarmentsColumn {
+                get {
+                    return this.columnPassedGarments;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn AQLPiecesCheckedColumn {
+                get {
+                    return this.columnAQLPiecesChecked;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -512,20 +602,29 @@ namespace ManagementDashboard.Reports.DataSets {
             public CMESewRow AddCMESewRow(
                         string Area, 
                         string Team, 
-                        decimal COUTEfficiency, 
+                        string COUTEfficiency, 
                         int COUT, 
                         decimal COUTSAH, 
-                        decimal LOUTEfficiency, 
+                        string LOUTEfficiency, 
                         int LOUT, 
                         decimal LOUTSAH, 
                         int PresentEmployees, 
-                        decimal Absenteesm, 
-                        decimal DowntimeHrs, 
-                        decimal ILQ, 
-                        decimal AQL, 
+                        string Absenteesm, 
+                        string DowntimeHrs, 
+                        string ILQ, 
+                        string AQL, 
                         int INQ, 
                         int WIP, 
-                        int OUTQ) {
+                        int OUTQ, 
+                        decimal CoutAchievedMinutes, 
+                        int CoutClockedMinutes, 
+                        decimal LOutAchievedMinutes, 
+                        int AbsentEmployees, 
+                        int RegisteredEmployees, 
+                        int ILQDefects, 
+                        int ILQPiecesChecked, 
+                        int PassedGarments, 
+                        int AQLPiecesChecked) {
                 CMESewRow rowCMESewRow = ((CMESewRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Area,
@@ -543,7 +642,16 @@ namespace ManagementDashboard.Reports.DataSets {
                         AQL,
                         INQ,
                         WIP,
-                        OUTQ};
+                        OUTQ,
+                        CoutAchievedMinutes,
+                        CoutClockedMinutes,
+                        LOutAchievedMinutes,
+                        AbsentEmployees,
+                        RegisteredEmployees,
+                        ILQDefects,
+                        ILQPiecesChecked,
+                        PassedGarments,
+                        AQLPiecesChecked};
                 rowCMESewRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCMESewRow);
                 return rowCMESewRow;
@@ -582,6 +690,15 @@ namespace ManagementDashboard.Reports.DataSets {
                 this.columnINQ = base.Columns["INQ"];
                 this.columnWIP = base.Columns["WIP"];
                 this.columnOUTQ = base.Columns["OUTQ"];
+                this.columnCoutAchievedMinutes = base.Columns["CoutAchievedMinutes"];
+                this.columnCoutClockedMinutes = base.Columns["CoutClockedMinutes"];
+                this.columnLOutAchievedMinutes = base.Columns["LOutAchievedMinutes"];
+                this.columnAbsentEmployees = base.Columns["AbsentEmployees"];
+                this.columnRegisteredEmployees = base.Columns["RegisteredEmployees"];
+                this.columnILQDefects = base.Columns["ILQDefects"];
+                this.columnILQPiecesChecked = base.Columns["ILQPiecesChecked"];
+                this.columnPassedGarments = base.Columns["PassedGarments"];
+                this.columnAQLPiecesChecked = base.Columns["AQLPiecesChecked"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -591,13 +708,13 @@ namespace ManagementDashboard.Reports.DataSets {
                 base.Columns.Add(this.columnArea);
                 this.columnTeam = new global::System.Data.DataColumn("Team", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTeam);
-                this.columnCOUTEfficiency = new global::System.Data.DataColumn("COUTEfficiency", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnCOUTEfficiency = new global::System.Data.DataColumn("COUTEfficiency", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCOUTEfficiency);
                 this.columnCOUT = new global::System.Data.DataColumn("COUT", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCOUT);
                 this.columnCOUTSAH = new global::System.Data.DataColumn("COUTSAH", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCOUTSAH);
-                this.columnLOUTEfficiency = new global::System.Data.DataColumn("LOUTEfficiency", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnLOUTEfficiency = new global::System.Data.DataColumn("LOUTEfficiency", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLOUTEfficiency);
                 this.columnLOUT = new global::System.Data.DataColumn("LOUT", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLOUT);
@@ -605,13 +722,13 @@ namespace ManagementDashboard.Reports.DataSets {
                 base.Columns.Add(this.columnLOUTSAH);
                 this.columnPresentEmployees = new global::System.Data.DataColumn("PresentEmployees", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPresentEmployees);
-                this.columnAbsenteesm = new global::System.Data.DataColumn("Absenteesm", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnAbsenteesm = new global::System.Data.DataColumn("Absenteesm", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAbsenteesm);
-                this.columnDowntimeHrs = new global::System.Data.DataColumn("DowntimeHrs", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnDowntimeHrs = new global::System.Data.DataColumn("DowntimeHrs", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDowntimeHrs);
-                this.columnILQ = new global::System.Data.DataColumn("ILQ", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnILQ = new global::System.Data.DataColumn("ILQ", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnILQ);
-                this.columnAQL = new global::System.Data.DataColumn("AQL", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnAQL = new global::System.Data.DataColumn("AQL", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAQL);
                 this.columnINQ = new global::System.Data.DataColumn("INQ", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnINQ);
@@ -619,6 +736,24 @@ namespace ManagementDashboard.Reports.DataSets {
                 base.Columns.Add(this.columnWIP);
                 this.columnOUTQ = new global::System.Data.DataColumn("OUTQ", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOUTQ);
+                this.columnCoutAchievedMinutes = new global::System.Data.DataColumn("CoutAchievedMinutes", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCoutAchievedMinutes);
+                this.columnCoutClockedMinutes = new global::System.Data.DataColumn("CoutClockedMinutes", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCoutClockedMinutes);
+                this.columnLOutAchievedMinutes = new global::System.Data.DataColumn("LOutAchievedMinutes", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLOutAchievedMinutes);
+                this.columnAbsentEmployees = new global::System.Data.DataColumn("AbsentEmployees", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAbsentEmployees);
+                this.columnRegisteredEmployees = new global::System.Data.DataColumn("RegisteredEmployees", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRegisteredEmployees);
+                this.columnILQDefects = new global::System.Data.DataColumn("ILQDefects", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnILQDefects);
+                this.columnILQPiecesChecked = new global::System.Data.DataColumn("ILQPiecesChecked", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnILQPiecesChecked);
+                this.columnPassedGarments = new global::System.Data.DataColumn("PassedGarments", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPassedGarments);
+                this.columnAQLPiecesChecked = new global::System.Data.DataColumn("AQLPiecesChecked", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAQLPiecesChecked);
                 this.ExtendedProperties.Add("Generator_TablePropName", "_CMESew");
                 this.ExtendedProperties.Add("Generator_UserTableName", "CMESew");
             }
@@ -795,10 +930,10 @@ namespace ManagementDashboard.Reports.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public decimal COUTEfficiency {
+            public string COUTEfficiency {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCMESew.COUTEfficiencyColumn]));
+                        return ((string)(this[this.tableCMESew.COUTEfficiencyColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'COUTEfficiency\' in table \'CMESew\' is DBNull.", e);
@@ -843,10 +978,10 @@ namespace ManagementDashboard.Reports.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public decimal LOUTEfficiency {
+            public string LOUTEfficiency {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCMESew.LOUTEfficiencyColumn]));
+                        return ((string)(this[this.tableCMESew.LOUTEfficiencyColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'LOUTEfficiency\' in table \'CMESew\' is DBNull.", e);
@@ -907,10 +1042,10 @@ namespace ManagementDashboard.Reports.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public decimal Absenteesm {
+            public string Absenteesm {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCMESew.AbsenteesmColumn]));
+                        return ((string)(this[this.tableCMESew.AbsenteesmColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Absenteesm\' in table \'CMESew\' is DBNull.", e);
@@ -923,10 +1058,10 @@ namespace ManagementDashboard.Reports.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public decimal DowntimeHrs {
+            public string DowntimeHrs {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCMESew.DowntimeHrsColumn]));
+                        return ((string)(this[this.tableCMESew.DowntimeHrsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'DowntimeHrs\' in table \'CMESew\' is DBNull.", e);
@@ -939,10 +1074,10 @@ namespace ManagementDashboard.Reports.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public decimal ILQ {
+            public string ILQ {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCMESew.ILQColumn]));
+                        return ((string)(this[this.tableCMESew.ILQColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'ILQ\' in table \'CMESew\' is DBNull.", e);
@@ -955,10 +1090,10 @@ namespace ManagementDashboard.Reports.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public decimal AQL {
+            public string AQL {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCMESew.AQLColumn]));
+                        return ((string)(this[this.tableCMESew.AQLColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'AQL\' in table \'CMESew\' is DBNull.", e);
@@ -1014,6 +1149,150 @@ namespace ManagementDashboard.Reports.DataSets {
                 }
                 set {
                     this[this.tableCMESew.OUTQColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public decimal CoutAchievedMinutes {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableCMESew.CoutAchievedMinutesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CoutAchievedMinutes\' in table \'CMESew\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCMESew.CoutAchievedMinutesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int CoutClockedMinutes {
+                get {
+                    try {
+                        return ((int)(this[this.tableCMESew.CoutClockedMinutesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CoutClockedMinutes\' in table \'CMESew\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCMESew.CoutClockedMinutesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public decimal LOutAchievedMinutes {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableCMESew.LOutAchievedMinutesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'LOutAchievedMinutes\' in table \'CMESew\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCMESew.LOutAchievedMinutesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int AbsentEmployees {
+                get {
+                    try {
+                        return ((int)(this[this.tableCMESew.AbsentEmployeesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AbsentEmployees\' in table \'CMESew\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCMESew.AbsentEmployeesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int RegisteredEmployees {
+                get {
+                    try {
+                        return ((int)(this[this.tableCMESew.RegisteredEmployeesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RegisteredEmployees\' in table \'CMESew\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCMESew.RegisteredEmployeesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int ILQDefects {
+                get {
+                    try {
+                        return ((int)(this[this.tableCMESew.ILQDefectsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ILQDefects\' in table \'CMESew\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCMESew.ILQDefectsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int ILQPiecesChecked {
+                get {
+                    try {
+                        return ((int)(this[this.tableCMESew.ILQPiecesCheckedColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ILQPiecesChecked\' in table \'CMESew\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCMESew.ILQPiecesCheckedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int PassedGarments {
+                get {
+                    try {
+                        return ((int)(this[this.tableCMESew.PassedGarmentsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PassedGarments\' in table \'CMESew\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCMESew.PassedGarmentsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int AQLPiecesChecked {
+                get {
+                    try {
+                        return ((int)(this[this.tableCMESew.AQLPiecesCheckedColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AQLPiecesChecked\' in table \'CMESew\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCMESew.AQLPiecesCheckedColumn] = value;
                 }
             }
             
@@ -1207,6 +1486,114 @@ namespace ManagementDashboard.Reports.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetOUTQNull() {
                 this[this.tableCMESew.OUTQColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCoutAchievedMinutesNull() {
+                return this.IsNull(this.tableCMESew.CoutAchievedMinutesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCoutAchievedMinutesNull() {
+                this[this.tableCMESew.CoutAchievedMinutesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCoutClockedMinutesNull() {
+                return this.IsNull(this.tableCMESew.CoutClockedMinutesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCoutClockedMinutesNull() {
+                this[this.tableCMESew.CoutClockedMinutesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsLOutAchievedMinutesNull() {
+                return this.IsNull(this.tableCMESew.LOutAchievedMinutesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetLOutAchievedMinutesNull() {
+                this[this.tableCMESew.LOutAchievedMinutesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsAbsentEmployeesNull() {
+                return this.IsNull(this.tableCMESew.AbsentEmployeesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetAbsentEmployeesNull() {
+                this[this.tableCMESew.AbsentEmployeesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsRegisteredEmployeesNull() {
+                return this.IsNull(this.tableCMESew.RegisteredEmployeesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetRegisteredEmployeesNull() {
+                this[this.tableCMESew.RegisteredEmployeesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsILQDefectsNull() {
+                return this.IsNull(this.tableCMESew.ILQDefectsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetILQDefectsNull() {
+                this[this.tableCMESew.ILQDefectsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsILQPiecesCheckedNull() {
+                return this.IsNull(this.tableCMESew.ILQPiecesCheckedColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetILQPiecesCheckedNull() {
+                this[this.tableCMESew.ILQPiecesCheckedColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsPassedGarmentsNull() {
+                return this.IsNull(this.tableCMESew.PassedGarmentsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetPassedGarmentsNull() {
+                this[this.tableCMESew.PassedGarmentsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsAQLPiecesCheckedNull() {
+                return this.IsNull(this.tableCMESew.AQLPiecesCheckedColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetAQLPiecesCheckedNull() {
+                this[this.tableCMESew.AQLPiecesCheckedColumn] = global::System.Convert.DBNull;
             }
         }
         

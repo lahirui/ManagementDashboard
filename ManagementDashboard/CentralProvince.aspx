@@ -1,7 +1,28 @@
 ﻿<%@ Page Title="Central Province" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CentralProvince.aspx.cs" Inherits="ManagementDashboard.CentralProvince" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="SubContent" runat="server">
-    <meta http-equiv="refresh" content="30;url=CPSummary.aspx" />
+    <%--<meta http-equiv="refresh" content="30;url=CPSummary.aspx" />--%>
+  <%--  <meta http-equiv="refresh" content="30;url=Default.aspx" />--%>
+    <script>
+         var seconds = 30;  
+        function RedirectAfterDelayFn() {
+            setInterval(function () {  
+                seconds--;  
+                if (seconds == 0) {  
+                    window.location = "Default.aspx";  
+                }  
+            }, 1000);  
+        } 
+
+        function stopRefresh() {
+
+            clearInterval(seconds = null); 
+           
+        }
+        function startRefresh() {
+             location.href = "Default.aspx";
+        }
+    </script>
 
     <div class="row text-center">
          <div class="col-md-3 text-center" style="padding-top:10px">
@@ -15,6 +36,16 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-md-1 text-center" style="padding-top: 10px; text-align:right">
+           
+            <button id="btnPause" type="button" class=" btn btn-danger glyphicon glyphicon-pause" style="width:40px; height:40px;" onclick="stopRefresh()"/>
+        </div>
+        <div class="col-md-1 text-center" style="padding-top: 10px; text-align:left">
+            <button id="btnStart" type="button" class="btn btn-success glyphicon glyphicon-play" style="width:40px; height:40px;" onclick="startRefresh()"/>
+        </div>
+    </div>
+    <br />
 
      <%--Bundling--%>
     <div class="row" style="padding-left:50px; font-weight:bolder">
@@ -275,10 +306,10 @@
             
         </div>
 
-        <div class="col-md-1 text-center">
+       <%-- <div class="col-md-1 text-center">
             <asp:Label ID="Label33" runat="server" Text="Output"></asp:Label>
            
-        </div>
+        </div>--%>
         <div class="col-md-1 text-center">
             <asp:Label ID="Label34" runat="server" Text="SAH"></asp:Label>
            
@@ -313,9 +344,9 @@
         <div class="col-md-1 text-center">
              <asp:label CssClass="btn btn-danger btn-lg btn-block" ID="btnTotEff" runat="server" Text="0"></asp:label>
         </div>
-        <div class="col-md-1 text-center">
+      <%--  <div class="col-md-1 text-center">
              <asp:Label CssClass="btn btn-danger btn-lg btn-block" ID="btnTotOutput" runat="server" Text="0"></asp:Label>
-        </div>
+        </div>--%>
         <div class="col-md-1 text-center">
              <asp:Label CssClass="btn btn-danger btn-lg btn-block" ID="btnTotSAH" runat="server" Text="0"></asp:Label>
         </div>
