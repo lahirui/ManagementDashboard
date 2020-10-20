@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -16,8 +17,10 @@ namespace ManagementDashboard
         private Common common = new Common();
         private GridViewQueries gridViewQueries = new GridViewQueries();
         int WIPtoFIN;
+       
         protected void Page_Load(object sender, EventArgs e)
         {
+            NumberFormatInfo numberFormatInfo = new CultureInfo("en-US", false).NumberFormat;
             if(!this.IsPostBack)
             {
                 
@@ -48,7 +51,7 @@ namespace ManagementDashboard
                     BtnSewAQL.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(11).ToString();
                     btnSewWIP.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(13).ToString();
                     btnSewLoutEff.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(4).ToString();
-                    btnSewLOUT.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(5).ToString();
+                    btnSewLOUT.Text = Convert.ToDouble(dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(5).ToString()).ToString("N2");
                     btnSewLoutSAH.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(6).ToString();
 
                     btnFinEff.Text= dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(1).ToString();
@@ -58,7 +61,7 @@ namespace ManagementDashboard
                     btnFinAbsent.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(8).ToString();
                     btnFinDowntime.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(9).ToString();
                     btnFinINQ.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(12).ToString();
-                    btnFinWIP.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(13).ToString();
+                    btnFinWIP.Text = (Convert.ToDouble(dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(13).ToString()).ToString("N2"));
                     btnFinOutQ.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(14).ToString();
 
                     DataSet dsTotal = new DataSet();
@@ -71,9 +74,8 @@ namespace ManagementDashboard
                         btnTotEff.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(0).ToString();
                         btnTotHC.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(6).ToString();
                         btnTotILQ.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(9).ToString();
-                        //btnTotOutput.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(1).ToString();
                         btnTotSAH.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(2).ToString();
-                        WIPtoFIN = Convert.ToInt32(dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(12).ToString()) + Convert.ToInt32(dsTotal.Tables[0].Rows[0].ItemArray.GetValue(12).ToString());
+                        WIPtoFIN = Convert.ToInt32(dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(12).ToString())+Convert.ToInt32(dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(13).ToString()) + Convert.ToInt32(dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(13).ToString());
                         btnTotWIP.Text = Convert.ToString(WIPtoFIN);
                     }
                 }
