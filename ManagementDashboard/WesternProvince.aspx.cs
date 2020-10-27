@@ -20,59 +20,66 @@ namespace ManagementDashboard
         {
             if (!Page.IsPostBack)
             {
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "RedirectAfterDelayFn();", true);
-                lblTime.Text = DateTime.Now.ToString("dd-MMM-yyyy hh:mm");
-                DataSet dsCMSL = new DataSet();
-                dsCMSL = common.ReturnDataSet(gridViewQueries.WPQuery);
-                if (dsCMSL.Tables[0].Rows.Count > 0)
+                try
                 {
-                    btnBunEfficiency.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(1).ToString();
-                    btnBunOutput.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(2).ToString();
-                    btnBunSAH.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(3).ToString();
-                    btnBunHC.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(7).ToString();
-                    btnBunAbsenteesm.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(8).ToString();
-                    btnBunDowntime.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(9).ToString();
-                    btnBunINQ.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(12).ToString();
-                    btnBunWIP.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(13).ToString();
-                    btnBunOutQ.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(14).ToString();
-
-                    btnSewEff.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(1).ToString();
-                    btnSewOut.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(2).ToString();
-                    btnSewSAH.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(3).ToString();
-                    btnSewHC.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(7).ToString();
-                    btnSewAbsent.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(8).ToString();
-                    btnSewDowntime.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(9).ToString();
-                    BtnSewILQ.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(10).ToString();
-                    BtnSewAQL.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(11).ToString();
-                    btnSewWIP.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(13).ToString();
-                    btnSewLoutEff.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(4).ToString();
-                    btnSewLOUT.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(5).ToString();
-                    btnSewLoutSAH.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(6).ToString();
-
-                    btnFinEff.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(1).ToString();
-                    btnFinOutput.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(2).ToString();
-                    btnFinSAH.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(3).ToString();
-                    btnFinHC.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(7).ToString();
-                    btnFinAbsent.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(8).ToString();
-                    btnFinDowntime.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(9).ToString();
-                    btnFinINQ.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(12).ToString();
-                    btnFinWIP.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(13).ToString();
-                    btnFinOutQ.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(14).ToString();
-
-                    DataSet dsTotal = new DataSet();
-                    dsTotal = common.ReturnDataSet(gridViewQueries.WPTotal);
-                    if (dsTotal.Tables[0].Rows.Count > 0)
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "RedirectAfterDelayFn();", true);
+                    lblTime.Text = DateTime.Now.ToString("dd-MMM-yyyy hh:mm");
+                    DataSet dsCMSL = new DataSet();
+                    dsCMSL = common.ReturnDataSet(gridViewQueries.WPQuery);
+                    if (dsCMSL.Tables[0].Rows.Count > 0)
                     {
-                        btnTotAbsent.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(7).ToString();
-                        btnTotAQL.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(10).ToString();
-                        btnTotDowntime.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(8).ToString();
-                        btnTotEff.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(0).ToString();
-                        btnTotHC.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(6).ToString();
-                        btnTotILQ.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(9).ToString();
-                        btnTotSAH.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(2).ToString();
-                        WIPtoFIN = Convert.ToInt32(dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(13).ToString()) + Convert.ToInt32(dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(12).ToString()) + Convert.ToInt32(dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(13).ToString());
-                        btnTotWIP.Text = Convert.ToString(WIPtoFIN);
+                        btnBunEfficiency.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(1).ToString();
+                        btnBunOutput.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(2).ToString();
+                        btnBunSAH.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(3).ToString();
+                        btnBunHC.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(7).ToString();
+                        btnBunAbsenteesm.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(8).ToString();
+                        btnBunDowntime.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(9).ToString();
+                        btnBunINQ.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(12).ToString();
+                        btnBunWIP.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(13).ToString();
+                        btnBunOutQ.Text = dsCMSL.Tables[0].Rows[0].ItemArray.GetValue(14).ToString();
+
+                        btnSewEff.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(1).ToString();
+                        btnSewOut.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(2).ToString();
+                        btnSewSAH.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(3).ToString();
+                        btnSewHC.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(7).ToString();
+                        btnSewAbsent.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(8).ToString();
+                        btnSewDowntime.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(9).ToString();
+                        BtnSewILQ.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(10).ToString();
+                        BtnSewAQL.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(11).ToString();
+                        btnSewWIP.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(13).ToString();
+                        btnSewLoutEff.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(4).ToString();
+                        btnSewLOUT.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(5).ToString();
+                        btnSewLoutSAH.Text = dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(6).ToString();
+
+                        btnFinEff.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(1).ToString();
+                        btnFinOutput.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(2).ToString();
+                        btnFinSAH.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(3).ToString();
+                        btnFinHC.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(7).ToString();
+                        btnFinAbsent.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(8).ToString();
+                        btnFinDowntime.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(9).ToString();
+                        btnFinINQ.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(12).ToString();
+                        btnFinWIP.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(13).ToString();
+                        btnFinOutQ.Text = dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(14).ToString();
+
+                        DataSet dsTotal = new DataSet();
+                        dsTotal = common.ReturnDataSet(gridViewQueries.WPTotal);
+                        if (dsTotal.Tables[0].Rows.Count > 0)
+                        {
+                            btnTotAbsent.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(7).ToString();
+                            btnTotAQL.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(10).ToString();
+                            btnTotDowntime.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(8).ToString();
+                            btnTotEff.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(0).ToString();
+                            btnTotHC.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(6).ToString();
+                            btnTotILQ.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(9).ToString();
+                            btnTotSAH.Text = dsTotal.Tables[0].Rows[0].ItemArray.GetValue(2).ToString();
+                            WIPtoFIN = Convert.ToInt32(dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(13).ToString()) + Convert.ToInt32(dsCMSL.Tables[0].Rows[2].ItemArray.GetValue(12).ToString()) + Convert.ToInt32(dsCMSL.Tables[0].Rows[1].ItemArray.GetValue(13).ToString());
+                            btnTotWIP.Text = Convert.ToString(WIPtoFIN);
+                        }
                     }
+                }
+                catch (Exception ex)
+                {
+                    lblMessage.Text = ex.Message.ToString();
                 }
 
                 
