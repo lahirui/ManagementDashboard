@@ -29,9 +29,7 @@ namespace ManagementDashboard
                 ReportViewer1.LocalReport.DataSources.Add(BundlingData);
                 ReportViewer1.LocalReport.DataSources.Add(SewingData);
                 ReportViewer1.LocalReport.DataSources.Add(FinishingData);
-
-                //ReportParameter Factory = new ReportParameter("Factory", factoryName);
-                //this.ReportViewer1.LocalReport.SetParameters(new ReportParameter[] { Factory });
+                this.ReportViewer1.LocalReport.DisplayName = factoryName+" Current Status" + "_" + DateTime.Now.ToString("yyyyMMdd HH:mm");
             }
         }
     }
