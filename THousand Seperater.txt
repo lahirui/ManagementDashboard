@@ -1,0 +1,10 @@
+Windows
+textBox1.Text = string.Format("{0:#,##0.00}", double.Parse(textBox1.Text));
+
+
+ASP
+protected void OnTextChanged(object sender, EventArgs e)
+{
+    double amount = Convert.ToDouble(txtAmount.Text.Trim());
+    txtAmount.Text = amount.ToString("#,##0");
+}

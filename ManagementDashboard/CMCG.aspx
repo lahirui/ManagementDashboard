@@ -5,7 +5,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
      <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 
-    <div class="row" style="padding-top: 20px; padding-bottom: 10px; width: 100%; overflow: scroll;">
+    <div class="row" style="padding-top: 20px; height:100%; width: 100%; overflow: scroll;">
         <rsweb:ReportViewer ID="ReportViewer1" runat="server" SizeToReportContent="true">
         </rsweb:ReportViewer>
     </div>
