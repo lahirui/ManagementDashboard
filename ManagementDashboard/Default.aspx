@@ -43,7 +43,7 @@
             <button id="btnStart" type="button" class="btn btn-success glyphicon glyphicon-play" style="width:40px; height:40px;" onclick="startRefresh()"/>
         </div>
         <div class="col-md-1 text-center" style="padding-top: 20px; text-align:left">
-             <asp:Label ID="lblMessage" style="color:red; font-weight:bold" runat="server" Text=""></asp:Label>
+             <asp:Label ID="lblMessage" style="color:red; font-weight:bold; align " runat="server" Text=""></asp:Label>
         </div>
     </div>
     <br />
